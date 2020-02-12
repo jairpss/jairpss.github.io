@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: absolute;
+    width: 2400px;
+    height: 1000px;
+    /*left: 33.25px;*/
+    top: -363.69px;
+    background: linear-gradient(106.4deg, #07378E 8.7%, #1769FF 95.75%);
+    /*transform: rotate(8.91deg);*/
+}
