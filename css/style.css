@@ -1,14 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900|Montserrat+Alternates:400,400i,500,500i,600,600i,700,700i,800|Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
-header {
+/* /* header {
     position: absolute;
     width: 2400px;
     height: 1000px;
-    /*left: 33.25px;*/
+    left: 33.25px;
     top: -363.69px;
     background: linear-gradient(106.4deg, #07378E 8.7%, #1769FF 95.75%);
-    /*transform: rotate(8.91deg);*/
+    transform: rotate(8.91deg);
+}  */
+
+/*----------Header------------*/
+
+.header{
+    background: linear-gradient(90.44deg, #07378E 8.47%, #1769FF 99.84%);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header ul{
+    display: flex;
+    height: inherit;
+}
+
+.header ul li{
+    height: inherit;
+}
+
+.header a{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+    transition: .3s;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.header a:hover{
+    background: #fff;
+    color:  #1769FF; 
+}
+
+.menu{
+    height: inherit;
+}
+
+ol, ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
+}
+
+/*-----------Hero--------------*/
+.hero{
+    height: 268px;
+    /*background-image: url('images/wd1.jpg');*/
+    background: linear-gradient(90.44deg, #07378E 8.47%, #1769FF 99.84%);
+    /*background-size: 500px 300px;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position-x: right;*/
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-image{
+    object-fit: cover;
+}
+
+.hero strong{
+    color: #026fff;   
+}
+
+
+/*--------------Container---------------*/
+
+.container{
+    max-width: 1006px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
 }
