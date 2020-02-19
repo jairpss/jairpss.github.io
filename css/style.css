@@ -82,6 +82,7 @@ figure{
     background: #01BD8F;
     color: #fff;
     border: none;
+    cursor: pointer;
 }
 
 /*-----------Hero--------------*/
@@ -106,11 +107,22 @@ figure{
 .hero strong{
     font-family: 'Lato', sans-serif;
     font-size: 18px;
-    color: #BABABA;   
+    color: #BABABA;
+    padding-left: 30px;   
 }
 
 
 /*--------------Container---------------*/
+
+.title{
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    color: #484848;
+    display: flex;
+    text-align: center;
+    margin: 38px 0;
+   
+}
 
 .container{
     max-width: 1006px;
@@ -122,3 +134,48 @@ figure{
     height: inherit;
     flex-wrap: inherit;
 }
+
+/*--------------Profile---------------*/
+.title1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.profile {
+    background: #FAFAFA;
+    padding: 20px;
+    display: flex;
+}
+
+.img-container{
+    width: 50%;
+}
+
+/* .img-container img{
+    max-width: 100%;
+} */
+
+.profile-image{
+    margin-top: 25px;
+}
+
+.profile-description{
+    margin-top: 115px;
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 18px;
+    line-height: 34px;
+    color: #828282;
+    text-align: justify;
+    /* display: flex;
+    align-items: center;  */
+}
+
+.profile-description b{
+    color: #1769FF;
+    font-weight: 600; 
+    
+} 
