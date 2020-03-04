@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0; }
 
+h2 {
+  color: #17182B;
+  font-family: 'Space Mono', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center; }
+
 /*----------Header------------*/
 header .menu {
   padding: 20px 100px;
@@ -73,6 +80,82 @@ header .logo:hover {
   cursor: pointer; }
 
 /*-----------Hero--------------*/
-/*--------------Container---------------*/
-/*--------------Profile---------------*/
+.name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 25px 35px; }
+
+.item-desc {
+  margin: auto; }
+  .item-desc .name {
+    font-family: 'Nunito', sans-serif;
+    color: #17182B;
+    font-size: 64px;
+    text-align: center; }
+  .item-desc .job {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 32px;
+    color: #3A41E4;
+    text-align: center;
+    letter-spacing: 0.25em; }
+
+.item-image {
+  margin: auto;
+  border-radius: 6px; }
+
+/*--------------PROFILE---------------*/
+.profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 55px 35px; }
+
+.item-description {
+  margin: auto; }
+  .item-description .profile-description {
+    font-family: 'Nunito', sans-serif;
+    color: #828282;
+    font-size: 22px;
+    text-align: center; }
+    .item-description .profile-description b {
+      color: #3A41E4;
+      font-family: 'Space Mono', sans-serif;
+      font-weight: 600; }
+
+/*--------------Skills---------------*/
+.skills {
+  background-color: #17182B;
+  color: #FFFFFF;
+  height: 250px; }
+  .skills h2 {
+    color: #FFFFFF; }
+
+.skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 25px 35px; }
+
+.wd {
+  margin: auto;
+  font-family: 'Nunito', sans-serif;
+  color: #ECECEC;
+  font-size: 22px; }
+
+.uix {
+  margin: auto;
+  font-family: 'Nunito', sans-serif;
+  color: #ECECEC;
+  font-size: 22px; }
+
 /*--------------Skills---------------*/
