@@ -49,10 +49,12 @@ header a {
   text-transform: uppercase;
   -webkit-transition: all ease-in-out 0.2s;
   -o-transition: all ease-in-out 0.2s;
-  transition: all ease-in-out 0.2s; }
+  transition: all ease-in-out 0.2s;
+  opacity: .8; }
   header a:hover {
-    color: #17182B;
-    font-weight: bold; }
+    /*color: $color-dark;*/
+    font-weight: 600;
+    opacity: 1.0; }
 
 header .contact {
   color: #17182B;
@@ -133,9 +135,10 @@ header .logo:hover {
 .skills {
   background-color: #17182B;
   color: #FFFFFF;
-  height: 250px; }
+  /*height: 250px;*/ }
   .skills h2 {
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    padding-top: 30px; }
 
 .skills-container {
   display: -webkit-box;
@@ -145,17 +148,63 @@ header .logo:hover {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 25px 35px; }
+  .skills-container h3 {
+    color: #FFFFFF;
+    padding: 30px 0;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center; }
+  .skills-container p {
+    padding: 5px 0;
+    font-size: 18px;
+    opacity: 0.9; }
 
 .wd {
   margin: auto;
   font-family: 'Nunito', sans-serif;
   color: #ECECEC;
-  font-size: 22px; }
+  font-size: 22px;
+  padding-bottom: 25px; }
 
 .uix {
   margin: auto;
   font-family: 'Nunito', sans-serif;
   color: #ECECEC;
-  font-size: 22px; }
+  font-size: 22px;
+  padding-bottom: 25px; }
 
-/*--------------Skills---------------*/
+/*--------------Skills_Bar---------------*/
+.progress {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border-radius: 100px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10px;
+  width: 300px;
+  margin-bottom: 15px; }
+
+.progress-value {
+  -webkit-animation: load 1.5s normal forwards;
+  animation: load 1.5s normal forwards;
+  border-radius: 100px;
+  background: -webkit-gradient(linear, left top, right top, from(#3B41E4), color-stop(113.02%, #52D2BC));
+  background: -webkit-linear-gradient(left, #3B41E4 0%, #52D2BC 113.02%);
+  background: -o-linear-gradient(left, #3B41E4 0%, #52D2BC 113.02%);
+  background: linear-gradient(90deg, #3B41E4 0%, #52D2BC 113.02%);
+  height: 10px;
+  width: 0; }
+
+/* @keyframes load {
+    0% { width: 0; }
+    100% { width: 75%; }
+  }*/
+/*--------------Projects---------------*/
