@@ -18,6 +18,27 @@ h2{
     font-size: 28px;
     text-align: center;
 }
+
+/* -----------------------SCROLLBAR-------------------- */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $color-gray-soft; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $color-gray-dark; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 /*----------Header------------*/
 
 header{
@@ -96,14 +117,16 @@ header{
 /*-----------Hero--------------*/
 
 .name-container{
-    display: flex;
-    justify-content: space-between;
-    margin: 25px 35px;
+    // display: flex;
+    // justify-content: space-between;
+    margin: 135px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .item-desc {
     margin: auto;
-
+    grid-column: 1;
     .name{
         font-family: 'Nunito', sans-serif;
         color: $color-dark;
@@ -120,9 +143,9 @@ header{
     }
 }
 
-.item-image {
-    margin: auto;
-    border-radius: 6px;
+.item-img {
+    grid-column: 2;
+    justify-self: center;
 }
 
 
@@ -132,7 +155,7 @@ header{
 .profile-container{
     display: flex;
     justify-content: center;
-    margin: 55px 35px;
+    margin: 160px 35px;
 }
 
 .item-description {
@@ -162,14 +185,14 @@ header{
 
     h2 {
         color: $color-white;
-        padding-top: 30px;
+        padding-top: 50px;
     }
 }
 
 .skills-container{
     display: flex;
     justify-content: space-between;
-    margin: 25px 35px;
+    margin: 35px 35px;
     h3 {
         color: $color-white;
         padding: 30px 0;
@@ -192,7 +215,7 @@ header{
     font-family: 'Nunito', sans-serif;
     color: #ECECEC;
     font-size: 22px;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
 }
 
 .uix{
@@ -200,7 +223,7 @@ header{
     font-family: 'Nunito', sans-serif;
     color: #ECECEC;
     font-size: 22px;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
 }
 
 
@@ -234,6 +257,111 @@ header{
   
 
 /*--------------Projects---------------*/
+.projects{
+    h2 {
+        color: $color-dark;
+        padding-top: 50px;
+    }
 
+    .projects-container{
+        margin: 35px 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .project-container{
+            max-width: 400px;
+            margin: 50px 20px;
+            justify-self: center;
+            box-shadow: 0px 0px 10px rgba(63, 61, 86, 0.25);
+            border-radius: 8px;
+            display: grid;
+            img {
+                width: 350px;
+                height: 182px;
+                padding: 15px;
+                
+                justify-self: center;
+            }
+
+            h3 {
+                color: $color-blue;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                text-align: center;
+                padding: 35px 0 15px 0;
+            }
+
+            p {
+                color: $color-gray-dark;
+                font-family: 'Nunito', sans-serif;
+                font-size: 14px;
+                padding: 20px 20px;
+
+            }
+            .tags-container {
+                padding: 15px;
+                display: grid;
+                
+                .tags {
+                    list-style: none;
+                    margin: 0;
+                    overflow: hidden; 
+                    //padding: 0;
+                    justify-self: center;
+                  }
+                  
+                  .tags li {
+                    float: left;    
+                    list-style: none;
+                  }
+                  
+                  .tag {
+                    font-family: 'Space Mono', sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    background: rgba(58, 65, 228, 0.3);
+                    border-radius: 3px;
+                    color: $color-gray-dark;
+                    display: inline-block;
+                    height: 26px;
+                    line-height: 26px;
+                    padding: 0 20px 0 23px;
+                    position: relative;
+                    margin: 0 10px 10px 0;
+                    text-decoration: none;
+                    -webkit-transition: color 0.2s;
+                  }
+                  
+                  .tag:hover {
+                    background-color: $color-blue;
+                    color: white;
+                  }
+    
+            }
+            a {
+                color: $color-blue;
+                padding: 5px 20px 25px;
+                font-family: 'Space Mono', sans-serif;
+                font-size: 14px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                font-weight: 600;
+                text-transform: uppercase;
+                transition: all ease-in-out 0.2s;
+                opacity: .8;
+                display: grid;
+                justify-self: center;
+
+                &:hover{
+                    font-weight: 600;
+                    opacity: 1.0;
+                }    
+            }
+        }
+
+
+    }
+}  
 
 
