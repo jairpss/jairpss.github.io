@@ -286,11 +286,11 @@ header .logo:hover {
   margin: 50px 20px;
   -ms-grid-column-align: center;
       justify-self: center;
-  -webkit-box-shadow: 0px 0px 10px rgba(63, 61, 86, 0.25);
-          box-shadow: 0px 0px 10px rgba(63, 61, 86, 0.25);
   border-radius: 8px;
   display: -ms-grid;
   display: grid;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 
 .projects .projects-container .project-container img {
@@ -377,6 +377,11 @@ header .logo:hover {
 
 .projects .projects-container .project-container a:hover {
   color: #17182B;
+}
+
+.projects .projects-container .project-container:hover {
+  -webkit-box-shadow: 0px 0px 10px rgba(63, 61, 86, 0.25);
+          box-shadow: 0px 0px 10px rgba(63, 61, 86, 0.25);
 }
 
 /*--------------CONTACT---------------*/
