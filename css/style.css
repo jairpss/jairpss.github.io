@@ -387,7 +387,7 @@ header .logo:hover {
 /*--------------CONTACT---------------*/
 .contact {
   height: 250px;
-  background-color: #ECECEC;
+  background-color: rgb(237, 241, 253);
 }
 
 .contact h2 {
