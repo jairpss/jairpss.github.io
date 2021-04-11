@@ -6,8 +6,13 @@
 }
 
 h2 {
+<<<<<<< HEAD
   color: #34343c;
   font-family: "Space Mono", sans-serif;
+=======
+  color: #17182B;
+  font-family: 'Space Mono', sans-serif;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   font-weight: 700;
   font-size: 28px;
   text-align: center;
@@ -21,7 +26,11 @@ h2 {
 
 /* Track */
 ::-webkit-scrollbar-track {
+<<<<<<< HEAD
   background: #ececec;
+=======
+  background: #ECECEC;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
 }
 
 /* Handle */
@@ -35,12 +44,16 @@ h2 {
 }
 
 /*----------Header------------*/
+<<<<<<< HEAD
 header {
   /*-----------Links and button--------------*/
   /*-----------Logo--------------*/
 }
 
 header .header-nav {
+=======
+header .menu {
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   padding: 20px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,8 +64,13 @@ header .header-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
   background: #34343c;
   color: #ffffff;
+=======
+  background: #3A41E4;
+  color: #FFFFFF;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   height: 40px;
 }
 
@@ -70,17 +88,26 @@ header li {
   list-style: none;
 }
 
+<<<<<<< HEAD
 header .header-nav-link {
   color: #ffffff;
   text-decoration: none;
   padding: 0 20px;
   font-family: "Space Mono", sans-serif;
+=======
+header a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0 20px;
+  font-family: 'Space Mono', sans-serif;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   font-size: 14px;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
+<<<<<<< HEAD
   opacity: 0.8;
 }
 
@@ -92,13 +119,34 @@ header .header-nav-btn {
   background-color: #34343c;
   color: #ffffff;
   border: 2px solid #ffffff;
+=======
+  opacity: .8;
+}
+
+header a:hover {
+  /*color: $color-dark;*/
+  font-weight: 600;
+  opacity: 1.0;
+}
+
+header .contact-btn {
+  color: #17182B;
+  background-color: #FFFFFF;
+  border: none;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   margin-left: 20px;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 4px;
+<<<<<<< HEAD
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   font-family: "Space Mono", sans-serif;
+=======
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+  font-family: 'Space Mono', sans-serif;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -106,6 +154,7 @@ header .header-nav-btn {
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 header .header-nav-btn:hover {
   background: #ffffff;
   color: #34343c;
@@ -135,18 +184,56 @@ header .header-nav-logo:hover {
 .section-hero-description__name {
   font-family: "Nunito", sans-serif;
   color: #34343c;
+=======
+header .contact-btn:hover {
+  background: #17182B;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+header .logo:hover {
+  cursor: pointer;
+}
+
+/*-----------Hero--------------*/
+.name-container {
+  margin: 135px 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.item-desc {
+  margin: auto;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.item-desc .name {
+  font-family: 'Nunito', sans-serif;
+  color: #17182B;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   font-size: 64px;
   text-align: center;
 }
 
+<<<<<<< HEAD
 .section-hero-description__job {
   font-family: "Space Mono", sans-serif;
   font-size: 32px;
   color: #4950e2;
+=======
+.item-desc .job {
+  font-family: 'Space Mono', sans-serif;
+  font-size: 32px;
+  color: #3A41E4;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   text-align: center;
   letter-spacing: 0.25em;
 }
 
+<<<<<<< HEAD
 .section-hero-img {
   margin: auto;
   -webkit-box-pack: center;
@@ -156,11 +243,25 @@ header .header-nav-logo:hover {
 }
 
 .section-hero-img img {
+=======
+.item-img {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.item-img img {
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   border-radius: 10px;
 }
 
 /*--------------PROFILE---------------*/
+<<<<<<< HEAD
 .section-aboutme-container {
+=======
+.profile-container {
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,6 +271,7 @@ header .header-nav-logo:hover {
   margin: 160px 35px;
 }
 
+<<<<<<< HEAD
 .section-aboutme-container .section-aboutme-description {
   font-family: "Nunito", sans-serif;
   color: #828282;
@@ -180,18 +282,43 @@ header .header-nav-logo:hover {
 .section-aboutme-container .section-aboutme-description b {
   color: #4950e2;
   font-family: "Space Mono", sans-serif;
+=======
+.item-description {
+  margin: auto;
+}
+
+.item-description .profile-description {
+  font-family: 'Nunito', sans-serif;
+  color: #828282;
+  font-size: 22px;
+  text-align: center;
+}
+
+.item-description .profile-description b {
+  color: #3A41E4;
+  font-family: 'Space Mono', sans-serif;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   font-weight: 600;
 }
 
 /*--------------Skills---------------*/
 .skills {
+<<<<<<< HEAD
   background-image: url(/img/wave-haikei.svg);
   color: #ffffff;
+=======
+  background-color: #17182B;
+  color: #FFFFFF;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   /*height: 250px;*/
 }
 
 .skills h2 {
+<<<<<<< HEAD
   color: #ffffff;
+=======
+  color: #FFFFFF;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   padding-top: 50px;
 }
 
@@ -206,7 +333,11 @@ header .header-nav-logo:hover {
 }
 
 .skills-container h3 {
+<<<<<<< HEAD
   color: #ffffff;
+=======
+  color: #FFFFFF;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   padding: 30px 0;
   font-weight: 600;
   font-size: 24px;
@@ -221,16 +352,26 @@ header .header-nav-logo:hover {
 
 .wd {
   margin: auto;
+<<<<<<< HEAD
   font-family: "Nunito", sans-serif;
   color: #ececec;
+=======
+  font-family: 'Nunito', sans-serif;
+  color: #ECECEC;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   font-size: 22px;
   padding-bottom: 35px;
 }
 
 .uix {
   margin: auto;
+<<<<<<< HEAD
   font-family: "Nunito", sans-serif;
   color: #ececec;
+=======
+  font-family: 'Nunito', sans-serif;
+  color: #ECECEC;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   font-size: 22px;
   padding-bottom: 35px;
 }
@@ -259,8 +400,13 @@ header .header-nav-logo:hover {
   -webkit-animation: load 1.5s normal forwards;
           animation: load 1.5s normal forwards;
   border-radius: 100px;
+<<<<<<< HEAD
   background: -webkit-gradient(linear, left top, right top, from(#3b41e4), color-stop(113.02%, #52d2bc));
   background: linear-gradient(90deg, #3b41e4 0%, #52d2bc 113.02%);
+=======
+  background: -webkit-gradient(linear, left top, right top, from(#3B41E4), color-stop(113.02%, #52D2BC));
+  background: linear-gradient(90deg, #3B41E4 0%, #52D2BC 113.02%);
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   height: 10px;
   width: 0;
 }
@@ -271,7 +417,11 @@ header .header-nav-logo:hover {
   }*/
 /*--------------Projects---------------*/
 .projects h2 {
+<<<<<<< HEAD
   color: #34343c;
+=======
+  color: #17182B;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   padding-top: 50px;
 }
 
@@ -304,8 +454,13 @@ header .header-nav-logo:hover {
 }
 
 .projects .projects-container .project-container h3 {
+<<<<<<< HEAD
   color: #4950e2;
   font-family: "Nunito", sans-serif;
+=======
+  color: #3A41E4;
+  font-family: 'Nunito', sans-serif;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   font-weight: 700;
   font-size: 20px;
   text-align: center;
@@ -314,7 +469,11 @@ header .header-nav-logo:hover {
 
 .projects .projects-container .project-container p {
   color: #828282;
+<<<<<<< HEAD
   font-family: "Nunito", sans-serif;
+=======
+  font-family: 'Nunito', sans-serif;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   font-size: 14px;
   padding: 20px 20px;
 }
@@ -339,7 +498,11 @@ header .header-nav-logo:hover {
 }
 
 .projects .projects-container .project-container .tags-container .tag {
+<<<<<<< HEAD
   font-family: "Space Mono", sans-serif;
+=======
+  font-family: 'Space Mono', sans-serif;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   font-size: 14px;
   font-weight: 500;
   background: rgba(58, 65, 228, 0.3);
@@ -356,14 +519,24 @@ header .header-nav-logo:hover {
 }
 
 .projects .projects-container .project-container .tags-container .tag:hover {
+<<<<<<< HEAD
   background-color: #4950e2;
+=======
+  background-color: #3A41E4;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   color: white;
 }
 
 .projects .projects-container .project-container a {
+<<<<<<< HEAD
   color: #4950e2;
   padding: 5px 20px 25px;
   font-family: "Space Mono", sans-serif;
+=======
+  color: #3A41E4;
+  padding: 5px 20px 25px;
+  font-family: 'Space Mono', sans-serif;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   font-size: 14px;
   text-align: center;
   letter-spacing: 0.05em;
@@ -378,7 +551,11 @@ header .header-nav-logo:hover {
 }
 
 .projects .projects-container .project-container a:hover {
+<<<<<<< HEAD
   color: #34343c;
+=======
+  color: #17182B;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
 }
 
 .projects .projects-container .project-container:hover {
@@ -389,11 +566,19 @@ header .header-nav-logo:hover {
 /*--------------CONTACT---------------*/
 .contact {
   height: 250px;
+<<<<<<< HEAD
   background-color: #ececec;
 }
 
 .contact h2 {
   color: #34343c;
+=======
+  background-color: rgb(237, 241, 253);
+}
+
+.contact h2 {
+  color: #17182B;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   padding-top: 50px;
 }
 
@@ -449,13 +634,18 @@ header .header-nav-logo:hover {
 }
 
 .contact .contact-container .contact-icon-cv img:hover {
+<<<<<<< HEAD
   color: #34343c;
+=======
+  color: #17182B;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
 }
 
 /*--------------FOOTER---------------*/
 footer {
   width: 100%;
   height: 50px;
+<<<<<<< HEAD
   background-color: #34343c;
   border-top: 5px solid #4950e2;
 }
@@ -463,8 +653,21 @@ footer {
 footer p {
   font-family: "Nunito", sans-serif;
   color: #ececec;
+=======
+  background-color: #17182B;
+  border-top: 5px solid #3A41E4;
+}
+
+footer p {
+  font-family: 'Nunito', sans-serif;
+  color: #ECECEC;
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
   font-size: 14px;
   text-align: center;
   margin: 15px 0 15px 0;
 }
+<<<<<<< HEAD
 /*# sourceMappingURL=style.css.map */
+=======
+/*# sourceMappingURL=style.css.map */
+>>>>>>> ca5ee7fcea482d5238af911d6f24c280a20412cc
