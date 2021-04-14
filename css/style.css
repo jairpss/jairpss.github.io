@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,600i,700,700i,800|Space+Mono:400,400i,700&display=swap");
-/*Manrope font on google Fonts*/
+@font-face {
+  font-family: "Calibre";
+  src: url("/css/fonts/Calibre/Calibre-Medium.ttf"), url("/css/fonts/Calibre/Calibre-Medium.woff"), url("/css/fonts/Calibre/Calibre-Medium.woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 h2 {
-  color: #34343c;
+  color: #1e1e1e;
   font-family: "Space Mono", sans-serif;
   font-weight: 700;
   font-size: 28px;
@@ -21,7 +25,7 @@ h2 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #ececec;
+  background: #f6f6f6;
 }
 
 /* Handle */
@@ -41,17 +45,18 @@ header {
 }
 
 header .header-nav {
+  position: static;
   padding: 20px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background: #34343c;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1e1e1e;
   color: #ffffff;
   height: 40px;
 }
@@ -61,8 +66,8 @@ header ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header li {
@@ -78,10 +83,10 @@ header .header-nav-link {
   font-size: 14px;
   text-align: center;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   opacity: 0.8;
+  font-weight: 400;
 }
 
 header .header-nav-link:hover {
@@ -89,13 +94,13 @@ header .header-nav-link:hover {
 }
 
 header .header-nav-btn {
-  background-color: #34343c;
-  color: #ffffff;
-  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  color: #1e1e1e;
+  border: none;
   margin-left: 20px;
-  padding: 10px 20px;
+  padding: 10px 24px;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 100px;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   font-family: "Space Mono", sans-serif;
@@ -103,13 +108,13 @@ header .header-nav-btn {
   font-weight: bold;
   text-align: center;
   letter-spacing: 0.15em;
-  text-transform: uppercase;
 }
 
 header .header-nav-btn:hover {
-  background: #ffffff;
-  color: #34343c;
+  background: #5552ff;
+  color: #ffffff;
   cursor: pointer;
+  border: none;
 }
 
 header .header-nav-logo:hover {
@@ -123,8 +128,8 @@ header .header-nav-logo:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 80px 15px;
 }
 
@@ -133,8 +138,8 @@ header .header-nav-logo:hover {
 }
 
 .section-hero-description__name {
-  font-family: "Nunito", sans-serif;
-  color: #34343c;
+  font-family: "Calibre", sans-serif;
+  color: #1e1e1e;
   font-size: 64px;
   text-align: center;
 }
@@ -142,7 +147,7 @@ header .header-nav-logo:hover {
 .section-hero-description__job {
   font-family: "Space Mono", sans-serif;
   font-size: 32px;
-  color: #4950e2;
+  color: #5552ff;
   text-align: center;
   letter-spacing: 0.25em;
 }
@@ -150,8 +155,8 @@ header .header-nav-logo:hover {
 .section-hero-img {
   margin: auto;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 80px;
 }
 
@@ -165,29 +170,29 @@ header .header-nav-logo:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 160px 35px;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 160px 100px;
 }
 
 .section-aboutme-container .section-aboutme-description {
-  font-family: "Nunito", sans-serif;
+  font-family: "Calibre", sans-serif;
   color: #828282;
-  font-size: 22px;
-  text-align: justify;
+  line-height: 2.3rem;
+  font-size: 18px;
+  text-align: center;
 }
 
 .section-aboutme-container .section-aboutme-description b {
-  color: #4950e2;
-  font-family: "Space Mono", sans-serif;
-  font-weight: 600;
+  color: #5552ff;
+  font-family: "Calibre", sans-serif;
+  font-weight: 700;
 }
 
 /*--------------Skills---------------*/
 .skills {
-  background-image: url(/img/wave-haikei.svg);
+  background-color: #1e1e1e;
   color: #ffffff;
-  /*height: 250px;*/
 }
 
 .skills h2 {
@@ -196,12 +201,13 @@ header .header-nav-logo:hover {
 }
 
 .skills-container {
+  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 35px 35px;
 }
 
@@ -235,49 +241,9 @@ header .header-nav-logo:hover {
   padding-bottom: 35px;
 }
 
-/*--------------Skills_Bar---------------*/
-.progress {
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  border-radius: 100px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 10px;
-  width: 300px;
-  margin-bottom: 15px;
-}
-
-.progress-value {
-  -webkit-animation: load 1.5s normal forwards;
-  animation: load 1.5s normal forwards;
-  border-radius: 100px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#3b41e4),
-    color-stop(113.02%, #52d2bc)
-  );
-  background: linear-gradient(90deg, #3b41e4 0%, #52d2bc 113.02%);
-  height: 10px;
-  width: 0;
-}
-
-/* @keyframes load {
-    0% { width: 0; }
-    100% { width: 75%; }
-  }*/
 /*--------------Projects---------------*/
 .projects h2 {
-  color: #34343c;
+  color: #1e1e1e;
   padding-top: 50px;
 }
 
@@ -286,14 +252,14 @@ header .header-nav-logo:hover {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .projects .projects-container .project-container {
   max-width: 400px;
   margin: 50px 20px;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
   border-radius: 8px;
   display: -ms-grid;
   display: grid;
@@ -306,11 +272,11 @@ header .header-nav-logo:hover {
   height: 182px;
   padding: 15px;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
 }
 
 .projects .projects-container .project-container h3 {
-  color: #4950e2;
+  color: #5552ff;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -336,7 +302,7 @@ header .header-nav-logo:hover {
   margin: 0;
   overflow: hidden;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
 }
 
 .projects .projects-container .project-container .tags-container .tags li {
@@ -362,12 +328,12 @@ header .header-nav-logo:hover {
 }
 
 .projects .projects-container .project-container .tags-container .tag:hover {
-  background-color: #4950e2;
+  background-color: #5552ff;
   color: white;
 }
 
 .projects .projects-container .project-container a {
-  color: #4950e2;
+  color: #5552ff;
   padding: 5px 20px 25px;
   font-family: "Space Mono", sans-serif;
   font-size: 14px;
@@ -380,26 +346,26 @@ header .header-nav-logo:hover {
   display: -ms-grid;
   display: grid;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
 }
 
 .projects .projects-container .project-container a:hover {
-  color: #34343c;
+  color: #1e1e1e;
 }
 
 .projects .projects-container .project-container:hover {
   -webkit-box-shadow: 0px 0px 10px rgba(63, 61, 86, 0.25);
-  box-shadow: 0px 0px 10px rgba(63, 61, 86, 0.25);
+          box-shadow: 0px 0px 10px rgba(63, 61, 86, 0.25);
 }
 
 /*--------------CONTACT---------------*/
 .contact {
   height: 250px;
-  background-color: #ececec;
+  background-color: #f6f6f6;
 }
 
 .contact h2 {
-  color: #34343c;
+  color: #1e1e1e;
   padding-top: 50px;
 }
 
@@ -408,13 +374,13 @@ header .header-nav-logo:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 30px 25px 20px;
 }
 
@@ -455,20 +421,20 @@ header .header-nav-logo:hover {
 }
 
 .contact .contact-container .contact-icon-cv img:hover {
-  color: #34343c;
+  color: #1e1e1e;
 }
 
 /*--------------FOOTER---------------*/
 footer {
   width: 100%;
   height: 50px;
-  background-color: #34343c;
-  border-top: 5px solid #4950e2;
+  background-color: #1e1e1e;
+  border-top: 5px solid #5552ff;
 }
 
 footer p {
   font-family: "Nunito", sans-serif;
-  color: #ececec;
+  color: #f6f6f6;
   font-size: 14px;
   text-align: center;
   margin: 15px 0 15px 0;
