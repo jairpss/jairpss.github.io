@@ -4,7 +4,16 @@
   font-family: "Calibre";
   src: url("/css/fonts/Calibre/Calibre-Medium.ttf"),
     url("/css/fonts/Calibre/Calibre-Medium.woff"),
-    url("/css/fonts/Calibre/Calibre-Medium.woff2");
+    url("/css/fonts/Calibre/Calibre-Medium.woff2"),
+    url("/css/fonts/Calibre/Calibre-Light.ttf"),
+    url("/css/fonts/Calibre/Calibre-Light.woff"),
+    url("/css/fonts/Calibre/Calibre-Light.woff2"),
+    url("/css/fonts/Calibre/Calibre-Regular.ttf"),
+    url("/css/fonts/Calibre/Calibre-Regular.woff"),
+    url("/css/fonts/Calibre/Calibre-Regular.woff2"),
+    url("/css/fonts/Calibre/Calibre-Semibold.ttf"),
+    url("/css/fonts/Calibre/Calibre-Semibold.woff"),
+    url("/css/fonts/Calibre/Calibre-Semibold.woff2");
 }
 
 $color-dark: #1e1e1e;
@@ -108,6 +117,7 @@ header {
       color: $color-white;
       cursor: pointer;
       border: none;
+      transform: translateY(-4px);
     }
   }
   /*-----------Logo--------------*/
@@ -138,7 +148,7 @@ header {
     font-size: 32px;
     color: $color-blue;
     text-align: center;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.2em;
   }
 }
 
@@ -154,20 +164,52 @@ header {
 /*--------------PROFILE---------------*/
 .section-aboutme-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin: 160px 100px;
+  margin: 120px 100px 120px 100px;
 
   .section-aboutme-description {
     font-family: "Calibre", sans-serif;
     color: $color-gray-dark;
     line-height: 2.3rem;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
 
     b {
       color: $color-blue;
       font-family: "Calibre", sans-serif;
       font-weight: 700;
+    }
+  }
+  .section-aboutme-btn-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 80px;
+
+    .section-aboutme-button {
+      background-color: $color-dark;
+      color: $color-white;
+      border: none;
+      padding: 16px 48px;
+      text-decoration: none;
+      border-radius: 100px;
+      transition: all ease-in-out 0.2s;
+      font-family: "Space Mono", sans-serif;
+      font-size: 14px;
+      text-align: center;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      letter-spacing: 0.15em;
+      justify-content: center;
+
+      &:hover {
+        background: $color-blue;
+        color: $color-white;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0px 15px 20px rgba(85, 82, 255, 0.4);
+        transform: translateY(-4px);
+      }
     }
   }
 }
@@ -177,6 +219,7 @@ header {
 .skills {
   background-color: $color-dark;
   color: $color-white;
+  border: 1px solid red;
 
   h2 {
     color: $color-white;
@@ -192,7 +235,7 @@ header {
   h3 {
     color: $color-white;
     padding: 30px 0;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     text-align: center;
   }
@@ -206,18 +249,20 @@ header {
 
 .wd {
   margin: auto;
-  font-family: "Nunito", sans-serif;
+  font-family: "Calibre", sans-serif;
   color: #ececec;
   font-size: 22px;
   padding-bottom: 35px;
+  border: 1px solid red;
 }
 
 .uix {
   margin: auto;
-  font-family: "Nunito", sans-serif;
+  font-family: "Calibre", sans-serif;
   color: #ececec;
   font-size: 22px;
   padding-bottom: 35px;
+  border: 1px solid red;
 }
 
 /*--------------Projects---------------*/
@@ -236,7 +281,7 @@ header {
       max-width: 400px;
       margin: 50px 20px;
       justify-self: center;
-      border-radius: 8px;
+      border-radius: 25px;
       display: grid;
       transition: all ease-in-out 0.2s;
       img {
@@ -319,6 +364,7 @@ header {
       }
       &:hover {
         box-shadow: 0px 0px 10px rgba(63, 61, 86, 0.25);
+        transform: translateY(-4px);
       }
     }
   }
