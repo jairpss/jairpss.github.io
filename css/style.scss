@@ -156,9 +156,6 @@ header {
   margin: auto;
   justify-content: center;
   margin-bottom: 80px;
-  img {
-    border-radius: 10px;
-  }
 }
 
 /*--------------PROFILE---------------*/
@@ -196,11 +193,13 @@ header {
       border-radius: 100px;
       transition: all ease-in-out 0.2s;
       font-family: "Space Mono", sans-serif;
-      font-size: 14px;
+      font-size: 16px;
+      font-weight: 500;
       text-align: center;
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
       letter-spacing: 0.15em;
       justify-content: center;
+      outline: none;
 
       &:hover {
         background: $color-blue;
@@ -216,53 +215,73 @@ header {
 
 /*--------------Skills---------------*/
 
-.skills {
-  background-color: $color-dark;
-  color: $color-white;
-  border: 1px solid red;
-
-  h2 {
-    color: $color-white;
-    padding-top: 50px;
-  }
-}
-
 .skills-container {
-  border: 1px solid red;
   display: flex;
-  justify-content: space-between;
-  margin: 35px 35px;
-  h3 {
-    color: $color-white;
-    padding: 30px 0;
-    font-weight: 500;
-    font-size: 24px;
-    text-align: center;
+  // border: 3px solid rgb(218, 42, 241);
+  justify-content: center;
+
+  .skills-container-main {
+    background-color: $color-dark;
+    // border: 3px solid rgb(145, 255, 0);
+    width: 1200px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    margin: 35px 35px;
+
+    .skills-title {
+      // border: 3px solid rgb(42, 185, 241);
+      h2 {
+        color: $color-white;
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
+    }
+    .skills-content {
+      // border: 3px dotted rgb(241, 238, 42);
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+
+      h3 {
+        color: $color-white;
+        padding-top: 24px;
+        padding-bottom: 30px;
+        font-weight: 500;
+        font-size: 26px;
+        text-align: center;
+        justify-content: center;
+      }
+
+      p {
+        padding: 5px 0;
+        font-size: 18px;
+        opacity: 0.9;
+        font-weight: 400;
+      }
+
+      .skills-programing {
+        font-family: "Calibre", sans-serif;
+        color: #ececec;
+        // border: 1px solid red;
+      }
+
+      .skills-tools {
+        font-family: "Calibre", sans-serif;
+        color: #ececec;
+        // border: 1px solid red;
+      }
+
+      .skills-design {
+        padding: 0 74px;
+        font-family: "Calibre", sans-serif;
+        color: #ececec;
+        // border: 1px solid red;
+      }
+    }
   }
-
-  p {
-    padding: 5px 0;
-    font-size: 18px;
-    opacity: 0.9;
-  }
-}
-
-.wd {
-  margin: auto;
-  font-family: "Calibre", sans-serif;
-  color: #ececec;
-  font-size: 22px;
-  padding-bottom: 35px;
-  border: 1px solid red;
-}
-
-.uix {
-  margin: auto;
-  font-family: "Calibre", sans-serif;
-  color: #ececec;
-  font-size: 22px;
-  padding-bottom: 35px;
-  border: 1px solid red;
 }
 
 /*--------------Projects---------------*/
