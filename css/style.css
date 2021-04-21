@@ -4,6 +4,16 @@
   src: url("/css/fonts/Calibre/Calibre-Medium.ttf"), url("/css/fonts/Calibre/Calibre-Medium.woff"), url("/css/fonts/Calibre/Calibre-Medium.woff2"), url("/css/fonts/Calibre/Calibre-Light.ttf"), url("/css/fonts/Calibre/Calibre-Light.woff"), url("/css/fonts/Calibre/Calibre-Light.woff2"), url("/css/fonts/Calibre/Calibre-Regular.ttf"), url("/css/fonts/Calibre/Calibre-Regular.woff"), url("/css/fonts/Calibre/Calibre-Regular.woff2"), url("/css/fonts/Calibre/Calibre-Semibold.ttf"), url("/css/fonts/Calibre/Calibre-Semibold.woff"), url("/css/fonts/Calibre/Calibre-Semibold.woff2");
 }
 
+::-moz-selection {
+  color: #ffffff;
+  background: #5552ff;
+}
+
+::selection {
+  color: #ffffff;
+  background: #5552ff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -269,6 +279,19 @@ header .header-nav-logo:hover {
   padding-bottom: 24px;
 }
 
+.skills-container .skills-container-main .skills-title h2 .underline {
+  background-image: linear-gradient(120deg, #5552ff 0%, #5552ff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  -webkit-transition: background-size 0.25s ease-in;
+  transition: background-size 0.25s ease-in;
+}
+
+.skills-container .skills-container-main .skills-title h2 .underline:hover {
+  background-size: 100% 88%;
+}
+
 .skills-container .skills-container-main .skills-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,20 +320,49 @@ header .header-nav-logo:hover {
   font-weight: 400;
 }
 
-.skills-container .skills-container-main .skills-content .skills-programing {
+.skills-container .skills-container-main .skills-content .skills-programing-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "Calibre", sans-serif;
   color: #ececec;
 }
 
-.skills-container .skills-container-main .skills-content .skills-tools {
-  font-family: "Calibre", sans-serif;
-  color: #ececec;
+.skills-container .skills-container-main .skills-content .skills-programing-img {
+  margin: 0 auto;
 }
 
-.skills-container .skills-container-main .skills-content .skills-design {
+.skills-container .skills-container-main .skills-content .skills-tools-container {
+  font-family: "Calibre", sans-serif;
+  color: #ececec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills-container .skills-container-main .skills-content .skills-tools-img {
+  margin: auto;
+}
+
+.skills-container .skills-container-main .skills-content .skills-design-container {
   padding: 0 74px;
   font-family: "Calibre", sans-serif;
   color: #ececec;
+}
+
+.skills-container .skills-container-main .skills-content .skills-design-img {
+  margin: 0 auto;
 }
 
 /*--------------Projects---------------*/
