@@ -131,6 +131,7 @@ header {
   /*-----------Logo--------------*/
   .header-nav-logo:hover {
     cursor: pointer;
+    fill: $color-blue;
   }
 }
 
@@ -335,7 +336,7 @@ header {
       max-width: 430px;
       margin: 50px 20px;
       justify-self: center;
-      border-radius: 25px;
+      border-radius: 15px;
       display: grid;
       transition: all ease-in-out 0.2s;
 
@@ -353,7 +354,7 @@ header {
           max-width: 380px;
           height: auto;
           // padding: 15px;
-          border-radius: 12px;
+          border-radius: 10px;
           justify-self: center;
         }
       }
@@ -363,8 +364,8 @@ header {
         font-family: "Inter", sans-serif;
         font-weight: 700;
         font-size: 20px;
-        text-align: center;
-        padding: 28px 0 15px 0;
+        text-align: left;
+        padding: 28px 0 15px 40px;
       }
 
       p {
@@ -372,7 +373,7 @@ header {
         color: $color-gray-dark;
         font-family: "Inter", sans-serif;
         font-size: 14px;
-        padding: 20px 20px;
+        padding: 20px 40px;
       }
       .tags-container {
         // border: 3px solid rgb(42, 151, 241);

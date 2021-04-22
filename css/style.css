@@ -135,6 +135,7 @@ header .header-nav-btn:hover {
 
 header .header-nav-logo:hover {
   cursor: pointer;
+  fill: #5552ff;
 }
 
 /*-----------HERO--------------*/
@@ -389,7 +390,7 @@ header .header-nav-logo:hover {
   margin: 50px 20px;
   -ms-grid-column-align: center;
       justify-self: center;
-  border-radius: 25px;
+  border-radius: 15px;
   display: -ms-grid;
   display: grid;
   -webkit-transition: all ease-in-out 0.2s;
@@ -408,7 +409,7 @@ header .header-nav-logo:hover {
 .projects-section .projects-container .project-container-item .project-container-img img {
   max-width: 380px;
   height: auto;
-  border-radius: 12px;
+  border-radius: 10px;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -418,15 +419,15 @@ header .header-nav-logo:hover {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 20px;
-  text-align: center;
-  padding: 28px 0 15px 0;
+  text-align: left;
+  padding: 28px 0 15px 40px;
 }
 
 .projects-section .projects-container .project-container-item p {
   color: #828282;
   font-family: "Inter", sans-serif;
   font-size: 14px;
-  padding: 20px 20px;
+  padding: 20px 40px;
 }
 
 .projects-section .projects-container .project-container-item .tags-container {
