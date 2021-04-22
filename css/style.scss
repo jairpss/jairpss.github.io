@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,600i,700,700i,800|Space+Mono:400,400i,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
 
 @font-face {
   font-family: "Calibre";
@@ -27,6 +27,10 @@ $color-gray-dark: #828282;
   background: $color-blue;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +40,7 @@ h2 {
   color: $color-dark;
   font-family: "Space Mono", sans-serif;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 32px;
   text-align: center;
 }
 
@@ -264,22 +268,22 @@ header {
         padding-top: 24px;
         padding-bottom: 30px;
         font-weight: 500;
-        font-size: 26px;
+        font-size: 22px;
         text-align: center;
         justify-content: center;
       }
 
       p {
         padding: 5px 0;
-        font-size: 18px;
+        font-size: 16px;
         opacity: 0.9;
-        font-weight: 400;
+        font-weight: 300;
       }
 
       .skills-programing-container {
         display: flex;
         flex-direction: column;
-        font-family: "Calibre", sans-serif;
+        font-family: "Inter", sans-serif;
         color: #ececec;
         // border: 1px solid red;
       }
@@ -288,11 +292,8 @@ header {
         margin: 0 auto;
       }
 
-      .skills-programing-content {
-      }
-
       .skills-tools-container {
-        font-family: "Calibre", sans-serif;
+        font-family: "Inter", sans-serif;
         color: #ececec;
         display: flex;
         flex-direction: column;
@@ -305,7 +306,7 @@ header {
 
       .skills-design-container {
         padding: 0 74px;
-        font-family: "Calibre", sans-serif;
+        font-family: "Inter", sans-serif;
         color: #ececec;
       }
 
@@ -317,57 +318,76 @@ header {
 }
 
 /*--------------Projects---------------*/
-.projects {
+.projects-section {
   h2 {
     color: $color-dark;
     padding-top: 50px;
   }
 
   .projects-container {
+    // border: 3px solid rgb(42, 185, 241);
     margin: 35px 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 
-    .project-container {
-      max-width: 400px;
+    .project-container-item {
+      border: 1px solid rgb(224, 224, 224);
+      max-width: 430px;
       margin: 50px 20px;
       justify-self: center;
       border-radius: 25px;
       display: grid;
       transition: all ease-in-out 0.2s;
-      img {
-        width: 350px;
-        height: 182px;
-        padding: 15px;
 
+      .project-container-img {
+        // border: 3px solid rgb(94, 94, 94);
+        // width: 400px;
+        // height: 280px;
+        padding: 14px 14px;
         justify-self: center;
+        object-fit: cover;
+        border-bottom: 1px solid rgb(230, 230, 230);
+
+        img {
+          // border: 3px solid rgb(241, 204, 42);
+          max-width: 380px;
+          height: auto;
+          // padding: 15px;
+          border-radius: 12px;
+          justify-self: center;
+        }
       }
 
       h3 {
         color: $color-blue;
-        font-family: "Nunito", sans-serif;
+        font-family: "Inter", sans-serif;
         font-weight: 700;
         font-size: 20px;
         text-align: center;
-        padding: 35px 0 15px 0;
+        padding: 28px 0 15px 0;
       }
 
       p {
+        // border: 3px solid rgb(42, 241, 52);
         color: $color-gray-dark;
-        font-family: "Nunito", sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 14px;
         padding: 20px 20px;
       }
       .tags-container {
+        // border: 3px solid rgb(42, 151, 241);
         padding: 15px;
         display: grid;
 
         .tags {
+          // border: 3px solid rgb(16, 17, 20);
+          display: flex;
           list-style: none;
           margin: 0;
           overflow: hidden;
           //padding: 0;
           justify-self: center;
+          justify-items: center;
         }
 
         .tags li {
@@ -379,43 +399,36 @@ header {
           font-family: "Space Mono", sans-serif;
           font-size: 14px;
           font-weight: 500;
-          background: rgba(58, 65, 228, 0.3);
-          border-radius: 3px;
-          color: $color-gray-dark;
+          background: $color-blue;
+          border-radius: 50px;
+          color: $color-white;
           display: inline-block;
           height: 26px;
           line-height: 26px;
-          padding: 0 20px 0 23px;
+          padding: 6px 38px;
           position: relative;
-          margin: 0 10px 10px 0;
+          margin: 0px 10px;
           text-decoration: none;
-          -webkit-transition: color 0.2s;
+          transition: 0.2s;
           &:hover {
-            background-color: $color-blue;
+            background-color: $color-dark;
             color: white;
+          }
+
+          img {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0;
+            padding: 0;
+            border: 1px solid red;
           }
         }
       }
-      a {
-        color: $color-blue;
-        padding: 5px 20px 25px;
-        font-family: "Space Mono", sans-serif;
-        font-size: 14px;
-        text-align: center;
-        letter-spacing: 0.05em;
-        font-weight: 600;
-        text-transform: uppercase;
-        transition: all ease-in-out 0.2s;
-        display: grid;
-        justify-self: center;
 
-        &:hover {
-          color: $color-dark;
-        }
-      }
       &:hover {
         box-shadow: 0px 0px 10px rgba(63, 61, 86, 0.25);
-        transform: translateY(-4px);
+        // transform: translateY(-4px);
       }
     }
   }
@@ -480,7 +493,7 @@ footer {
   border-top: 5px solid $color-blue;
 
   p {
-    font-family: "Nunito", sans-serif;
+    font-family: "Inter", sans-serif;
     color: $color-gray-soft;
     font-size: 14px;
     text-align: center;

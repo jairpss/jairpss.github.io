@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,600i,700,700i,800|Space+Mono:400,400i,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
 @font-face {
   font-family: "Calibre";
   src: url("/css/fonts/Calibre/Calibre-Medium.ttf"), url("/css/fonts/Calibre/Calibre-Medium.woff"), url("/css/fonts/Calibre/Calibre-Medium.woff2"), url("/css/fonts/Calibre/Calibre-Light.ttf"), url("/css/fonts/Calibre/Calibre-Light.woff"), url("/css/fonts/Calibre/Calibre-Light.woff2"), url("/css/fonts/Calibre/Calibre-Regular.ttf"), url("/css/fonts/Calibre/Calibre-Regular.woff"), url("/css/fonts/Calibre/Calibre-Regular.woff2"), url("/css/fonts/Calibre/Calibre-Semibold.ttf"), url("/css/fonts/Calibre/Calibre-Semibold.woff"), url("/css/fonts/Calibre/Calibre-Semibold.woff2");
@@ -14,6 +14,10 @@
   background: #5552ff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +27,7 @@ h2 {
   color: #1e1e1e;
   font-family: "Space Mono", sans-serif;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 32px;
   text-align: center;
 }
 
@@ -306,7 +310,7 @@ header .header-nav-logo:hover {
   padding-top: 24px;
   padding-bottom: 30px;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 22px;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -315,9 +319,9 @@ header .header-nav-logo:hover {
 
 .skills-container .skills-container-main .skills-content p {
   padding: 5px 0;
-  font-size: 18px;
+  font-size: 16px;
   opacity: 0.9;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .skills-container .skills-container-main .skills-content .skills-programing-container {
@@ -328,7 +332,7 @@ header .header-nav-logo:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Calibre", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #ececec;
 }
 
@@ -337,7 +341,7 @@ header .header-nav-logo:hover {
 }
 
 .skills-container .skills-container-main .skills-content .skills-tools-container {
-  font-family: "Calibre", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #ececec;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,7 +361,7 @@ header .header-nav-logo:hover {
 
 .skills-container .skills-container-main .skills-content .skills-design-container {
   padding: 0 74px;
-  font-family: "Calibre", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #ececec;
 }
 
@@ -366,21 +370,22 @@ header .header-nav-logo:hover {
 }
 
 /*--------------Projects---------------*/
-.projects h2 {
+.projects-section h2 {
   color: #1e1e1e;
   padding-top: 50px;
 }
 
-.projects .projects-container {
+.projects-section .projects-container {
   margin: 35px 15px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
-.projects .projects-container .project-container {
-  max-width: 400px;
+.projects-section .projects-container .project-container-item {
+  border: 1px solid #e0e0e0;
+  max-width: 430px;
   margin: 50px 20px;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -391,97 +396,96 @@ header .header-nav-logo:hover {
   transition: all ease-in-out 0.2s;
 }
 
-.projects .projects-container .project-container img {
-  width: 350px;
-  height: 182px;
-  padding: 15px;
+.projects-section .projects-container .project-container-item .project-container-img {
+  padding: 14px 14px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.projects-section .projects-container .project-container-item .project-container-img img {
+  max-width: 380px;
+  height: auto;
+  border-radius: 12px;
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-.projects .projects-container .project-container h3 {
+.projects-section .projects-container .project-container-item h3 {
   color: #5552ff;
-  font-family: "Nunito", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 20px;
   text-align: center;
-  padding: 35px 0 15px 0;
+  padding: 28px 0 15px 0;
 }
 
-.projects .projects-container .project-container p {
+.projects-section .projects-container .project-container-item p {
   color: #828282;
-  font-family: "Nunito", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   padding: 20px 20px;
 }
 
-.projects .projects-container .project-container .tags-container {
+.projects-section .projects-container .project-container-item .tags-container {
   padding: 15px;
   display: -ms-grid;
   display: grid;
 }
 
-.projects .projects-container .project-container .tags-container .tags {
+.projects-section .projects-container .project-container-item .tags-container .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   list-style: none;
   margin: 0;
   overflow: hidden;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
+  justify-items: center;
 }
 
-.projects .projects-container .project-container .tags-container .tags li {
+.projects-section .projects-container .project-container-item .tags-container .tags li {
   float: left;
   list-style: none;
 }
 
-.projects .projects-container .project-container .tags-container .tag {
+.projects-section .projects-container .project-container-item .tags-container .tag {
   font-family: "Space Mono", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  background: rgba(58, 65, 228, 0.3);
-  border-radius: 3px;
-  color: #828282;
+  background: #5552ff;
+  border-radius: 50px;
+  color: #ffffff;
   display: inline-block;
   height: 26px;
   line-height: 26px;
-  padding: 0 20px 0 23px;
+  padding: 6px 38px;
   position: relative;
-  margin: 0 10px 10px 0;
+  margin: 0px 10px;
   text-decoration: none;
-  -webkit-transition: color 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.projects .projects-container .project-container .tags-container .tag:hover {
-  background-color: #5552ff;
+.projects-section .projects-container .project-container-item .tags-container .tag:hover {
+  background-color: #1e1e1e;
   color: white;
 }
 
-.projects .projects-container .project-container a {
-  color: #5552ff;
-  padding: 5px 20px 25px;
-  font-family: "Space Mono", sans-serif;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  font-weight: 600;
-  text-transform: uppercase;
-  -webkit-transition: all ease-in-out 0.2s;
-  transition: all ease-in-out 0.2s;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-column-align: center;
-      justify-self: center;
+.projects-section .projects-container .project-container-item .tags-container .tag img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
 }
 
-.projects .projects-container .project-container a:hover {
-  color: #1e1e1e;
-}
-
-.projects .projects-container .project-container:hover {
+.projects-section .projects-container .project-container-item:hover {
   -webkit-box-shadow: 0px 0px 10px rgba(63, 61, 86, 0.25);
           box-shadow: 0px 0px 10px rgba(63, 61, 86, 0.25);
-  -webkit-transform: translateY(-4px);
-          transform: translateY(-4px);
 }
 
 /*--------------CONTACT---------------*/
@@ -559,7 +563,7 @@ footer {
 }
 
 footer p {
-  font-family: "Nunito", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #f6f6f6;
   font-size: 14px;
   text-align: center;

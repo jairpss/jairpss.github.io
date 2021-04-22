@@ -59,9 +59,9 @@
     </section>
 
     <!-- ----------------SKILLS----------------- -->
-    <section id="skills" class="skills-container">
+    <section id="skills" class="skills-container" >
       
-      <div class="skills-container-main">
+      <div class="skills-container-main" data-aos="fade-in">
 
         <div class="skills-title">
           <h2><span class="underline">SKILLS</span></h2>
@@ -112,11 +112,15 @@
 
     </section>
     <!-- ---------------------PROJECTS--------------------------- -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects-section">
       <h2>PROJECTS</h2>
       <div class="projects-container">
-        <div class="project-container">
-          <img src="img/project1.svg" alt="Project 1">
+
+        <div class="project-container-item">
+          <div class="project-container-img">
+            <img src="img/portfolio-jair.PNG" alt="Project Portfolio">
+          </div>
+          
           <h3>Web Developer</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Inventore blanditiis debitis dolores accusantium, 
@@ -124,15 +128,17 @@
             hic facere, veritatis odit amet autem necessitatibus ipsam vel iste.</p>
           <div class="tags-container">
             <ul class="tags">
-              <li><a href="#" class="tag">HTML</a></li>
-              <li><a href="#" class="tag">CSS</a></li>
-              <li><a href="#" class="tag">JavaScript</a></li>
+              <li><a href="#" class="tag">Code</a></li>
+              <li><a href="#" class="tag">Live</a></li>
             </ul>
           </div>
-          <a href="/">VIEW PROJECT</a>
         </div>
-        <div class="project-container">
-          <img src="img/project2.svg" alt="Project 2">
+
+        <div class="project-container-item">
+          <div class="project-container-img">
+            <img src="img/project2.svg" alt="Project 2">
+          </div>
+          
           <h3>UI Design</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Inventore blanditiis debitis dolores accusantium, 
@@ -140,13 +146,30 @@
             hic facere, veritatis odit amet autem necessitatibus ipsam vel iste.</p>
           <div class="tags-container">
             <ul class="tags">
-              <li><a href="#" class="tag">SASS</a></li>
-              <li><a href="#" class="tag">Bootstrap</a></li>
-              <li><a href="#" class="tag">Figma</a></li>
+              <li><a href="#" class="tag">Code</a></li>
+              <li><a href="#" class="tag">Live</a></li>
             </ul>
           </div>
-          <a href="/">VIEW PROJECT</a>
         </div>
+
+        <div class="project-container-item">
+          <div class="project-container-img">
+            <img src="img/project2.svg" alt="Project 2">
+          </div>
+          
+          <h3>UI Design</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Inventore blanditiis debitis dolores accusantium, 
+            dolor magnam possimus praesentium? A dolorem, quibusdam, 
+            hic facere, veritatis odit amet autem necessitatibus ipsam vel iste.</p>
+          <div class="tags-container">
+            <ul class="tags">
+              <li><a href="#" class="tag">Code <img src="img/bxl-github.svg" alt=""></a></li>
+              <li><a href="#" class="tag">Live</a></li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
     <!-- ----------------CONTACT----------------- -->
@@ -180,5 +203,10 @@
   <footer>
       <p>Made by Jair Partida ⚡</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
