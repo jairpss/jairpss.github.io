@@ -5,9 +5,6 @@
   src: url("/css/fonts/Calibre/Calibre-Medium.ttf"),
     url("/css/fonts/Calibre/Calibre-Medium.woff"),
     url("/css/fonts/Calibre/Calibre-Medium.woff2"),
-    url("/css/fonts/Calibre/Calibre-Light.ttf"),
-    url("/css/fonts/Calibre/Calibre-Light.woff"),
-    url("/css/fonts/Calibre/Calibre-Light.woff2"),
     url("/css/fonts/Calibre/Calibre-Regular.ttf"),
     url("/css/fonts/Calibre/Calibre-Regular.woff"),
     url("/css/fonts/Calibre/Calibre-Regular.woff2"),
@@ -84,24 +81,59 @@ header {
   }
 
   li {
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     list-style: none;
   }
   /*-----------Links and button--------------*/
   .header-nav-link {
     color: $color-white;
     text-decoration: none;
-    padding: 0 20px;
+    position: relative;
+    // padding: 0 20px;
     font-family: "Space Mono", sans-serif;
     font-size: 14px;
     text-align: center;
     letter-spacing: 0.05em;
     transition: all ease-in-out 0.2s;
-    opacity: 0.8;
+    padding-bottom: 8px;
     font-weight: 400;
-
-    &:hover {
-      opacity: 1;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: $color-blue;
+    }
+    &:before {
+      opacity: 0;
+      transform: translateY(-8px);
+      transition: transform 0s, opacity 0s;
+    }
+    &:after {
+      opacity: 0;
+      transform: translateY(8px/2);
+      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        opacity 0.2s;
+    }
+    &:hover,
+    &:focus {
+      &:before,
+      &:after {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      &:before {
+        transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+          opacity 0.2s;
+      }
+      &:after {
+        transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+          opacity 0s 0.2s;
+      }
     }
   }
 
@@ -175,15 +207,15 @@ header {
   margin: 120px 100px 120px 100px;
 
   .section-aboutme-description {
-    font-family: "Calibre", sans-serif;
+    font-family: "Inter", sans-serif;
     color: $color-gray-dark;
     line-height: 2.3rem;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
 
     b {
       color: $color-blue;
-      font-family: "Calibre", sans-serif;
+      font-family: "Inter", sans-serif;
       font-weight: 700;
     }
   }
@@ -197,7 +229,7 @@ header {
       background-color: $color-dark;
       color: $color-white;
       border: none;
-      padding: 16px 48px;
+      padding: 14px 40px;
       text-decoration: none;
       border-radius: 100px;
       transition: all ease-in-out 0.2s;
@@ -332,7 +364,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
 
     .project-container-item {
-      border: 1px solid rgb(224, 224, 224);
+      border: 0.5px solid rgb(221, 221, 221);
       max-width: 430px;
       margin: 50px 20px;
       justify-self: center;
@@ -354,7 +386,7 @@ header {
           max-width: 380px;
           height: auto;
           // padding: 15px;
-          border-radius: 10px;
+          border-radius: 8px;
           justify-self: center;
         }
       }
@@ -369,19 +401,19 @@ header {
       }
 
       p {
-        // border: 3px solid rgb(42, 241, 52);
+        //border: 3px solid rgb(42, 241, 52);
         color: $color-gray-dark;
         font-family: "Inter", sans-serif;
         font-size: 14px;
         padding: 20px 40px;
       }
-      .tags-container {
-        // border: 3px solid rgb(42, 151, 241);
+      .btn-container {
+        //border: 3px solid rgb(42, 151, 241);
         padding: 15px;
         display: grid;
 
-        .tags {
-          // border: 3px solid rgb(16, 17, 20);
+        .btn-container_ul {
+          //border: 3px solid rgb(16, 17, 20);
           display: flex;
           list-style: none;
           margin: 0;
@@ -391,16 +423,17 @@ header {
           justify-items: center;
         }
 
-        .tags li {
+        .btn-container_ul li {
           float: left;
           list-style: none;
         }
 
-        .tag {
+        .projects-btn_blue {
           font-family: "Space Mono", sans-serif;
           font-size: 14px;
           font-weight: 500;
           background: $color-blue;
+          border: 2px solid transparent;
           border-radius: 50px;
           color: $color-white;
           display: inline-block;
@@ -412,10 +445,40 @@ header {
           text-decoration: none;
           transition: 0.2s;
           &:hover {
-            background-color: $color-dark;
-            color: white;
+            background-color: $color-gray-soft;
+            color: $color-blue;
+            border: 2px solid $color-blue;
           }
-
+          img {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0;
+            padding: 0;
+            border: 1px solid red;
+          }
+        }
+        .projects-btn_dark {
+          font-family: "Space Mono", sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+          background: $color-dark;
+          border: 2px solid transparent;
+          border-radius: 50px;
+          color: $color-white;
+          display: inline-block;
+          height: 26px;
+          line-height: 26px;
+          padding: 6px 38px;
+          position: relative;
+          margin: 0px 10px;
+          text-decoration: none;
+          transition: 0.2s;
+          &:hover {
+            background-color: $color-gray-soft;
+            color: $color-dark;
+            border: 2px solid $color-dark;
+          }
           img {
             display: inline-block;
             width: 20px;
@@ -426,10 +489,9 @@ header {
           }
         }
       }
-
       &:hover {
-        box-shadow: 0px 0px 10px rgba(63, 61, 86, 0.25);
-        // transform: translateY(-4px);
+        box-shadow: 0px 1px 40px rgba(99, 99, 100, 0.18);
+        transform: translateY(-2px);
       }
     }
   }
@@ -437,49 +499,28 @@ header {
 
 /*--------------CONTACT---------------*/
 .contact {
-  height: 250px;
+  height: 350px;
   background-color: $color-gray-soft;
   h2 {
     color: $color-dark;
     padding-top: 50px;
+    padding-bottom: 30px;
   }
   .contact-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 30px 25px 20px;
-    .contact-icon-mail {
-      padding: 10px 15px;
-      img {
-        width: 40px;
-        height: 40px;
-      }
-    }
-
-    .contact-icon-github {
-      padding: 10px 15px;
-      img {
-        width: 40px;
-        height: 40px;
-      }
-    }
-
-    .contact-icon-linkedin {
-      padding: 10px 15px;
-      img {
-        width: 40px;
-        height: 40px;
-      }
-    }
-
-    .contact-icon-cv {
-      padding: 10px 15px;
-      img {
-        width: 40px;
-        height: 40px;
+    padding: 50px 25px 50px;
+    .contact-item {
+      // border: 3px solid rgb(255, 0, 0);
+      padding: 10px 32px;
+      i {
+        color: $color-dark;
+        font-size: 40px;
+        transition: 0.2s;
         &:hover {
-          color: $color-dark;
+          color: $color-blue;
         }
       }
     }
@@ -491,13 +532,13 @@ footer {
   width: 100%;
   height: 50px;
   background-color: $color-dark;
-  border-top: 5px solid $color-blue;
 
   p {
     font-family: "Inter", sans-serif;
     color: $color-gray-soft;
     font-size: 14px;
     text-align: center;
+    padding-top: 15px;
     margin: 15px 0 15px 0;
   }
 }
