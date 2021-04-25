@@ -312,7 +312,6 @@ header .header-nav-logo:hover {
 .skills-container .skills-container-main {
   background-color: #1e1e1e;
   width: 1200px;
-  height: 500px;
   border-radius: 15px;
   padding: 28px 32px;
   display: -webkit-box;
@@ -345,9 +344,11 @@ header .header-nav-logo:hover {
 }
 
 .skills-container .skills-container-main .skills-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 30px;
@@ -376,6 +377,9 @@ header .header-nav-logo:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -384,8 +388,8 @@ header .header-nav-logo:hover {
   color: #ececec;
 }
 
-.skills-container .skills-container-main .skills-content .skills-programing-img {
-  margin: 0 auto;
+.skills-container .skills-container-main .skills-content .skills-programing-container .skills-programing-content {
+  text-align: center;
 }
 
 .skills-container .skills-container-main .skills-content .skills-tools-container {
@@ -403,18 +407,27 @@ header .header-nav-logo:hover {
           justify-content: center;
 }
 
-.skills-container .skills-container-main .skills-content .skills-tools-img {
-  margin: auto;
+.skills-container .skills-container-main .skills-content .skills-tools-container .skills-tools-content {
+  text-align: center;
 }
 
 .skills-container .skills-container-main .skills-content .skills-design-container {
-  padding: 0 74px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "Inter", sans-serif;
   color: #ececec;
 }
 
-.skills-container .skills-container-main .skills-content .skills-design-img {
-  margin: 0 auto;
+.skills-container .skills-container-main .skills-content .skills-design-container .skills-design-content {
+  text-align: center;
 }
 
 /*--------------Projects---------------*/
@@ -427,8 +440,6 @@ header .header-nav-logo:hover {
   margin: 35px 15px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
 }
 
 .projects-section .projects-container .project-container-item {
@@ -607,7 +618,7 @@ header .header-nav-logo:hover {
 
 .contact .contact-container .contact-item i {
   color: #1e1e1e;
-  font-size: 40px;
+  font-size: 36px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -629,6 +640,61 @@ footer p {
   font-size: 14px;
   text-align: center;
   padding-top: 15px;
-  margin: 15px 0 15px 0;
+}
+
+/*----------------- Media Querys ----------------- */
+@media screen and (min-width: 480px) {
+  .skills-img {
+    margin: 15px auto;
+  }
+  .skills-tools-container {
+    margin-top: 15px;
+  }
+  .skills-design-container {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .skills-container-main {
+    height: 720px;
+  }
+  .skills-content {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .skills-tools-container {
+    margin-top: 0px;
+  }
+  .skills-design-container {
+    margin-top: 0px;
+  }
+  .projects-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .skills-container-main {
+    height: 500px;
+  }
+  .skills-content {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .skills-tools-container {
+    margin-top: 0px;
+  }
+  .skills-design-container {
+    margin-top: 0px;
+  }
+  .skills-img {
+    margin: 0 auto;
+  }
+  .projects-container {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 /*# sourceMappingURL=style.css.map */

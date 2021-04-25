@@ -265,7 +265,6 @@ header {
     background-color: $color-dark;
     // border: 3px solid rgb(145, 255, 0);
     width: 1200px;
-    height: 500px;
     border-radius: 15px;
     padding: 28px 32px;
     display: flex;
@@ -292,7 +291,8 @@ header {
     }
     .skills-content {
       // border: 3px dotted rgb(241, 238, 42);
-      display: flex;
+      display: grid;
+      align-items: start;
       justify-content: space-around;
       margin-top: 30px;
 
@@ -315,14 +315,13 @@ header {
 
       .skills-programing-container {
         display: flex;
+        justify-content: center;
         flex-direction: column;
         font-family: "Inter", sans-serif;
         color: #ececec;
-        // border: 1px solid red;
-      }
-
-      .skills-programing-img {
-        margin: 0 auto;
+        .skills-programing-content {
+          text-align: center;
+        }
       }
 
       .skills-tools-container {
@@ -331,20 +330,21 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-      }
-
-      .skills-tools-img {
-        margin: auto;
+        .skills-tools-content {
+          text-align: center;
+        }
       }
 
       .skills-design-container {
-        padding: 0 74px;
+        // padding: 0 74px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         font-family: "Inter", sans-serif;
         color: #ececec;
-      }
-
-      .skills-design-img {
-        margin: 0 auto;
+        .skills-design-content {
+          text-align: center;
+        }
       }
     }
   }
@@ -361,7 +361,7 @@ header {
     // border: 3px solid rgb(42, 185, 241);
     margin: 35px 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-columns: 1fr 1fr 1fr;
 
     .project-container-item {
       border: 0.5px solid rgb(221, 221, 221);
@@ -407,6 +407,7 @@ header {
         font-size: 14px;
         padding: 20px 40px;
       }
+
       .btn-container {
         //border: 3px solid rgb(42, 151, 241);
         padding: 15px;
@@ -517,7 +518,7 @@ header {
       padding: 10px 32px;
       i {
         color: $color-dark;
-        font-size: 40px;
+        font-size: 36px;
         transition: 0.2s;
         &:hover {
           color: $color-blue;
@@ -539,6 +540,66 @@ footer {
     font-size: 14px;
     text-align: center;
     padding-top: 15px;
-    margin: 15px 0 15px 0;
+  }
+}
+
+/*----------------- Media Querys ----------------- */
+@media screen and (min-width: 480px) {
+  .skills-img {
+    margin: 15px auto;
+  }
+
+  .skills-tools-container {
+    margin-top: 15px;
+  }
+
+  .skills-design-container {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  //cambia en skills tambien
+  .skills-container-main {
+    height: 720px;
+  }
+  .skills-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills-tools-container {
+    margin-top: 0px;
+  }
+
+  .skills-design-container {
+    margin-top: 0px;
+  }
+  //project grid
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .skills-container-main {
+    height: 500px;
+  }
+  .skills-content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .skills-tools-container {
+    margin-top: 0px;
+  }
+
+  .skills-design-container {
+    margin-top: 0px;
+  }
+
+  .skills-img {
+    margin: 0 auto;
+  }
+  .projects-container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
