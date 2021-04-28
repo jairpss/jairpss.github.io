@@ -444,8 +444,6 @@ header .header-nav-logo:hover {
 
 .projects-section .projects-container .project-container-item {
   border: 0.5px solid #dddddd;
-  max-width: 430px;
-  margin: 50px 20px;
   -ms-grid-column-align: center;
       justify-self: center;
   border-radius: 15px;
@@ -456,7 +454,6 @@ header .header-nav-logo:hover {
 }
 
 .projects-section .projects-container .project-container-item .project-container-img {
-  padding: 14px 14px;
   -ms-grid-column-align: center;
       justify-self: center;
   -o-object-fit: cover;
@@ -465,7 +462,6 @@ header .header-nav-logo:hover {
 }
 
 .projects-section .projects-container .project-container-item .project-container-img img {
-  max-width: 380px;
   height: auto;
   border-radius: 8px;
   -ms-grid-column-align: center;
@@ -521,7 +517,6 @@ header .header-nav-logo:hover {
   display: inline-block;
   height: 26px;
   line-height: 26px;
-  padding: 6px 38px;
   position: relative;
   margin: 0px 10px;
   text-decoration: none;
@@ -555,7 +550,6 @@ header .header-nav-logo:hover {
   display: inline-block;
   height: 26px;
   line-height: 26px;
-  padding: 6px 38px;
   position: relative;
   margin: 0px 10px;
   text-decoration: none;
@@ -611,10 +605,6 @@ header .header-nav-logo:hover {
       flex-wrap: wrap;
 }
 
-.contact .contact-container .contact-item {
-  border: 3px solid red;
-}
-
 .contact .contact-container .contact-item i {
   color: #1e1e1e;
   -webkit-transition: 0.2s;
@@ -640,7 +630,38 @@ footer p {
   padding-top: 15px;
 }
 
-/*----------------- Media Querys ----------------- */
+/*----------------------------------------------- Media Querys --------------------------------------------- */
+@media screen and (max-width: 480px) {
+  .skills-img {
+    margin: 15px auto;
+  }
+  .project-container-item {
+    max-width: 340px;
+    margin: 50px 8px;
+  }
+  .project-container-item .project-container-img {
+    padding: 14px 8px;
+  }
+  .project-container-item .project-container-img img {
+    max-width: 300px;
+  }
+  .projects-btn_blue {
+    padding: 6px 32px;
+  }
+  .projects-btn_dark {
+    padding: 6px 32px;
+  }
+  .contact-container {
+    padding: 50px 25px 50px;
+  }
+  .contact-container .contact-item {
+    padding: 10px 10px;
+  }
+  .contact-container .contact-item i {
+    font-size: 28px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .skills-img {
     margin: 15px auto;
@@ -650,6 +671,31 @@ footer p {
   }
   .skills-design-container {
     margin-top: 15px;
+  }
+  .project-container-item {
+    max-width: 430px;
+    margin: 50px 8px;
+  }
+  .project-container-item .project-container-img {
+    padding: 14px 14px;
+  }
+  .project-container-item .project-container-img img {
+    max-width: 380px;
+  }
+  .projects-btn_blue {
+    padding: 6px 38px;
+  }
+  .projects-btn_dark {
+    padding: 6px 38px;
+  }
+  .contact-container {
+    padding: 50px 25px 50px;
+  }
+  .contact-container .contact-item {
+    padding: 10px 15px;
+  }
+  .contact-container .contact-item i {
+    font-size: 32px;
   }
 }
 
@@ -670,6 +716,31 @@ footer p {
   .projects-container {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+  }
+  .project-container-item {
+    max-width: 430px;
+    margin: 50px 8px;
+  }
+  .project-container-item .project-container-img {
+    padding: 14px 14px;
+  }
+  .project-container-item .project-container-img img {
+    max-width: 380px;
+  }
+  .projects-btn_blue {
+    padding: 6px 38px;
+  }
+  .projects-btn_dark {
+    padding: 6px 38px;
+  }
+  .contact-container {
+    padding: 50px 25px 50px;
+  }
+  .contact-container .contact-item {
+    padding: 10px 32px;
+  }
+  .contact-container .contact-item i {
+    font-size: 36px;
   }
 }
 
@@ -693,6 +764,22 @@ footer p {
   .projects-container {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+  }
+  .project-container-item {
+    max-width: 430px;
+    margin: 50px 8px;
+  }
+  .project-container-item .project-container-img {
+    padding: 14px 14px;
+  }
+  .project-container-item .project-container-img img {
+    max-width: 380px;
+  }
+  .projects-btn_blue {
+    padding: 6px 38px;
+  }
+  .projects-btn_dark {
+    padding: 6px 38px;
   }
   .contact-container {
     padding: 50px 25px 50px;

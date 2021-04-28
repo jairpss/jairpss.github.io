@@ -358,34 +358,25 @@ header {
   }
 
   .projects-container {
-    // border: 3px solid rgb(42, 185, 241);
+    //border: 3px solid rgb(42, 185, 241);
     margin: 35px 15px;
     display: grid;
     // grid-template-columns: 1fr 1fr 1fr;
 
     .project-container-item {
       border: 0.5px solid rgb(221, 221, 221);
-      max-width: 430px;
-      margin: 50px 20px;
       justify-self: center;
       border-radius: 15px;
       display: grid;
       transition: all ease-in-out 0.2s;
 
       .project-container-img {
-        // border: 3px solid rgb(94, 94, 94);
-        // width: 400px;
-        // height: 280px;
-        padding: 14px 14px;
         justify-self: center;
         object-fit: cover;
         border-bottom: 1px solid rgb(230, 230, 230);
 
         img {
-          // border: 3px solid rgb(241, 204, 42);
-          max-width: 380px;
           height: auto;
-          // padding: 15px;
           border-radius: 8px;
           justify-self: center;
         }
@@ -440,7 +431,6 @@ header {
           display: inline-block;
           height: 26px;
           line-height: 26px;
-          padding: 6px 38px;
           position: relative;
           margin: 0px 10px;
           text-decoration: none;
@@ -470,7 +460,6 @@ header {
           display: inline-block;
           height: 26px;
           line-height: 26px;
-          padding: 6px 38px;
           position: relative;
           margin: 0px 10px;
           text-decoration: none;
@@ -513,7 +502,6 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     .contact-item {
-      border: 3px solid rgb(255, 0, 0);
       i {
         color: $color-dark;
         transition: 0.2s;
@@ -540,8 +528,42 @@ footer {
   }
 }
 
-/*----------------- Media Querys ----------------- */
-@media screen and (min-width: 479px) {
+/*----------------------------------------------- Media Querys --------------------------------------------- */
+@media screen and (max-width: 480px) {
+  .skills-img {
+    margin: 15px auto;
+  }
+
+  .project-container-item {
+    max-width: 340px;
+    margin: 50px 8px;
+
+    .project-container-img {
+      padding: 14px 8px;
+
+      img {
+        max-width: 300px;
+      }
+    }
+  }
+
+  .projects-btn_blue {
+    padding: 6px 32px;
+  }
+
+  .projects-btn_dark {
+    padding: 6px 32px;
+  }
+
+  .contact-container {
+    padding: 50px 25px 50px;
+    .contact-item {
+      padding: 10px 10px;
+      i {
+        font-size: 28px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -555,6 +577,35 @@ footer {
 
   .skills-design-container {
     margin-top: 15px;
+  }
+
+  .project-container-item {
+    max-width: 430px;
+    margin: 50px 8px;
+
+    .project-container-img {
+      padding: 14px 14px;
+
+      img {
+        max-width: 380px;
+      }
+    }
+  }
+
+  .projects-btn_blue {
+    padding: 6px 38px;
+  }
+  .projects-btn_dark {
+    padding: 6px 38px;
+  }
+  .contact-container {
+    padding: 50px 25px 50px;
+    .contact-item {
+      padding: 10px 15px;
+      i {
+        font-size: 32px;
+      }
+    }
   }
 }
 
@@ -577,6 +628,36 @@ footer {
   //project grid
   .projects-container {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .project-container-item {
+    max-width: 430px;
+    margin: 50px 8px;
+
+    .project-container-img {
+      padding: 14px 14px;
+
+      img {
+        max-width: 380px;
+      }
+    }
+  }
+
+  .projects-btn_blue {
+    padding: 6px 38px;
+  }
+  .projects-btn_dark {
+    padding: 6px 38px;
+  }
+
+  .contact-container {
+    padding: 50px 25px 50px;
+    .contact-item {
+      padding: 10px 32px;
+      i {
+        font-size: 36px;
+      }
+    }
   }
 }
 
@@ -603,6 +684,26 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .project-container-item {
+    max-width: 430px;
+    margin: 50px 8px;
+
+    .project-container-img {
+      padding: 14px 14px;
+
+      img {
+        max-width: 380px;
+      }
+    }
+  }
+
+  .projects-btn_blue {
+    padding: 6px 38px;
+  }
+
+  .projects-btn_dark {
+    padding: 6px 38px;
+  }
   .contact-container {
     padding: 50px 25px 50px;
     .contact-item {
