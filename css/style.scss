@@ -512,13 +512,10 @@ header {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 50px 25px 50px;
     .contact-item {
-      // border: 3px solid rgb(255, 0, 0);
-      padding: 10px 32px;
+      border: 3px solid rgb(255, 0, 0);
       i {
         color: $color-dark;
-        font-size: 36px;
         transition: 0.2s;
         &:hover {
           color: $color-blue;
@@ -544,6 +541,9 @@ footer {
 }
 
 /*----------------- Media Querys ----------------- */
+@media screen and (min-width: 479px) {
+}
+
 @media screen and (min-width: 480px) {
   .skills-img {
     margin: 15px auto;
@@ -601,5 +601,15 @@ footer {
   }
   .projects-container {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contact-container {
+    padding: 50px 25px 50px;
+    .contact-item {
+      padding: 10px 32px;
+      i {
+        font-size: 36px;
+      }
+    }
   }
 }

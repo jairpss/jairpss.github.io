@@ -609,16 +609,14 @@ header .header-nav-logo:hover {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 50px 25px 50px;
 }
 
 .contact .contact-container .contact-item {
-  padding: 10px 32px;
+  border: 3px solid red;
 }
 
 .contact .contact-container .contact-item i {
   color: #1e1e1e;
-  font-size: 36px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -695,6 +693,15 @@ footer p {
   .projects-container {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+  }
+  .contact-container {
+    padding: 50px 25px 50px;
+  }
+  .contact-container .contact-item {
+    padding: 10px 32px;
+  }
+  .contact-container .contact-item i {
+    font-size: 36px;
   }
 }
 /*# sourceMappingURL=style.css.map */
