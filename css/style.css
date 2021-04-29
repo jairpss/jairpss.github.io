@@ -592,16 +592,54 @@ footer p {
 
 /*----------------------------------------------- Media Querys --------------------------------------------- */
 @media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
   .header-nav {
     padding: 20px 32px;
   }
   .burger {
-    display: inline-block;
+    display: block;
     font-size: 28px;
   }
-  .header-nav-links {
-    display: none;
+  .burger:hover {
+    cursor: pointer;
   }
+  .header-nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgba(30, 30, 30, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  }
+  .header-nav-links li {
+    margin-top: auto;
+    margin-bottom: 60px;
+  }
+  .nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  /*--------------About---------------*/
   .section-aboutme-container {
     margin: 120px 38px 120px 38px;
   }
