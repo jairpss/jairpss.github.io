@@ -60,7 +60,6 @@ header {
 
 header .header-nav {
   position: static;
-  padding: 20px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -593,6 +592,16 @@ footer p {
 
 /*----------------------------------------------- Media Querys --------------------------------------------- */
 @media screen and (max-width: 480px) {
+  .header-nav {
+    padding: 20px 32px;
+  }
+  .burger {
+    display: inline-block;
+    font-size: 28px;
+  }
+  .header-nav-links {
+    display: none;
+  }
   .section-aboutme-container {
     margin: 120px 38px 120px 38px;
   }
@@ -636,6 +645,16 @@ footer p {
 }
 
 @media screen and (min-width: 480px) {
+  .header-nav {
+    padding: 20px 32px;
+  }
+  .burger {
+    display: inline-block;
+    font-size: 28px;
+  }
+  .header-nav-links {
+    display: none;
+  }
   .section-aboutme-container {
     margin: 120px 80px 120px 80px;
   }
@@ -681,6 +700,15 @@ footer p {
 }
 
 @media screen and (min-width: 920px) {
+  .header-nav {
+    padding: 20px 100px;
+  }
+  .burger {
+    display: none;
+  }
+  .header-nav-links {
+    display: inline-block;
+  }
   .section-aboutme-container {
     margin: 120px 100px 120px 100px;
   }
@@ -730,6 +758,15 @@ footer p {
 }
 
 @media screen and (min-width: 1380px) {
+  .header-nav {
+    padding: 20px 100px;
+  }
+  .burger {
+    display: none;
+  }
+  .header-nav-links {
+    display: inline-block;
+  }
   .section-aboutme-container {
     margin: 120px 100px 120px 100px;
   }
