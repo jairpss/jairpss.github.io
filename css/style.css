@@ -58,6 +58,10 @@ header {
   /*-----------Logo--------------*/
 }
 
+header .header {
+  position: fixed;
+}
+
 header .header-nav {
   position: static;
   display: -webkit-box;
@@ -157,7 +161,6 @@ header .header-nav-btn {
   background-color: #ffffff;
   color: #1e1e1e;
   border: none;
-  margin-left: 20px;
   padding: 10px 24px;
   text-decoration: none;
   border-radius: 100px;
@@ -623,7 +626,7 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
+    width: 75%;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     -webkit-transition: -webkit-transform 0.3s ease-in;
@@ -632,12 +635,15 @@ footer p {
     transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   }
   .header-nav-links li {
-    margin-top: auto;
+    margin-top: 70px;
     margin-bottom: 60px;
   }
   .nav-active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+  }
+  .header-nav-btn {
+    margin-left: 0px;
   }
   /*--------------About---------------*/
   .section-aboutme-container {
@@ -683,16 +689,57 @@ footer p {
 }
 
 @media screen and (min-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
   .header-nav {
     padding: 20px 32px;
   }
   .burger {
-    display: inline-block;
+    display: block;
     font-size: 28px;
   }
-  .header-nav-links {
-    display: none;
+  .burger:hover {
+    cursor: pointer;
   }
+  .header-nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgba(30, 30, 30, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  }
+  .header-nav-links li {
+    margin-top: 70px;
+    margin-bottom: 60px;
+  }
+  .nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .header-nav-btn {
+    margin-left: 0px;
+  }
+  /*--------------About---------------*/
   .section-aboutme-container {
     margin: 120px 80px 120px 80px;
   }
@@ -745,7 +792,32 @@ footer p {
     display: none;
   }
   .header-nav-links {
-    display: inline-block;
+    position: inherit;
+    right: 0px;
+    left: 42vw;
+    height: 80px;
+    top: 0;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .header-nav-links li {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .header-nav-btn {
+    margin-left: 20px;
   }
   .section-aboutme-container {
     margin: 120px 100px 120px 100px;
@@ -803,8 +875,34 @@ footer p {
     display: none;
   }
   .header-nav-links {
-    display: inline-block;
+    position: inherit;
+    right: 0px;
+    left: 42vw;
+    height: 80px;
+    top: 0;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
+  .header-nav-links li {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .header-nav-btn {
+    margin-left: 20px;
+  }
+  /*--------------About---------------*/
   .section-aboutme-container {
     margin: 120px 100px 120px 100px;
   }

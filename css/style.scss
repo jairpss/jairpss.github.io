@@ -64,6 +64,9 @@ h2 {
 /*----------Header------------*/
 
 header {
+  .header {
+    position: fixed;
+  }
   .header-nav {
     position: static;
     display: flex;
@@ -140,7 +143,7 @@ header {
     background-color: $color-white;
     color: $color-dark;
     border: none;
-    margin-left: 20px;
+
     padding: 10px 24px;
     text-decoration: none;
     border-radius: 100px;
@@ -534,16 +537,20 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 75%;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
     li {
-      margin-top: auto;
+      margin-top: 70px;
       margin-bottom: 60px;
     }
   }
   .nav-active {
     transform: translateX(0%);
+  }
+
+  .header-nav-btn {
+    margin-left: 0px;
   }
 
   /*--------------About---------------*/
@@ -598,18 +605,46 @@ footer {
 }
 
 @media screen and (min-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .header-nav {
     padding: 20px 32px;
   }
   .burger {
-    display: inline-block;
+    display: block;
     font-size: 28px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .header-nav-links {
-    display: none;
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgba(30, 30, 30, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    li {
+      margin-top: 70px;
+      margin-bottom: 60px;
+    }
   }
-
+  .nav-active {
+    transform: translateX(0%);
+  }
+  .header-nav-btn {
+    margin-left: 0px;
+  }
+  /*--------------About---------------*/
   .section-aboutme-container {
     margin: 120px 80px 120px 80px;
   }
@@ -670,8 +705,28 @@ footer {
   }
 
   .header-nav-links {
-    display: inline-block;
+    position: inherit;
+    right: 0px;
+    left: 42vw;
+    height: 80px;
+    top: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    transform: translateX(0%);
+
+    li {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
   }
+
+  .header-nav-btn {
+    margin-left: 20px;
+  }
+
   .section-aboutme-container {
     margin: 120px 100px 120px 100px;
   }
@@ -735,8 +790,30 @@ footer {
     display: none;
   }
   .header-nav-links {
-    display: inline-block;
+    position: inherit;
+    right: 0px;
+    left: 42vw;
+    height: 80px;
+    top: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    transform: translateX(0%);
+
+    li {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
   }
+
+  .header-nav-btn {
+    margin-left: 20px;
+  }
+
+  /*--------------About---------------*/
+
   .section-aboutme-container {
     margin: 120px 100px 120px 100px;
   }
