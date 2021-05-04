@@ -158,8 +158,8 @@ header .header-nav-link:hover:after, header .header-nav-link:focus:after {
 }
 
 header .header-nav-btn {
-  background-color: #ffffff;
-  color: #1e1e1e;
+  background-color: #5552ff;
+  color: #ffffff;
   border: none;
   padding: 10px 24px;
   text-decoration: none;
@@ -174,8 +174,8 @@ header .header-nav-btn {
 }
 
 header .header-nav-btn:hover {
-  background: #5552ff;
-  color: #ffffff;
+  background: #ffffff;
+  color: #5552ff;
   cursor: pointer;
   border: none;
   -webkit-transform: translateY(-4px);
@@ -273,18 +273,18 @@ header .header-nav-logo:hover {
   background-color: #1e1e1e;
   color: #ffffff;
   border: none;
-  padding: 14px 40px;
+  padding: 12px 34px;
   text-decoration: none;
   border-radius: 100px;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   font-family: "Space Mono", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   text-align: center;
   -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  letter-spacing: 0.15em;
+  letter-spacing: 0.12em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -542,6 +542,53 @@ header .header-nav-logo:hover {
           transform: translateY(-2px);
 }
 
+.projects-section .projects-container-btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 70px;
+}
+
+.projects-section .projects-container-btn .projects-button {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: none;
+  padding: 14px 34px;
+  text-decoration: none;
+  border-radius: 100px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  font-family: "Space Mono", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.12em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+}
+
+.projects-section .projects-container-btn .projects-button:hover {
+  background: #5552ff;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  -webkit-box-shadow: 0px 15px 20px rgba(85, 82, 255, 0.4);
+          box-shadow: 0px 15px 20px rgba(85, 82, 255, 0.4);
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
 /*--------------CONTACT---------------*/
 .contact {
   height: 350px;
@@ -633,6 +680,7 @@ footer p {
     transition: -webkit-transform 0.3s ease-in;
     transition: transform 0.3s ease-in;
     transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+    z-index: 100;
   }
   .header-nav-links li {
     margin-top: 70px;
@@ -721,6 +769,7 @@ footer p {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    z-index: 100;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     -webkit-transition: -webkit-transform 0.3s ease-in;

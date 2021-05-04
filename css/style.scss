@@ -140,8 +140,8 @@ header {
   }
 
   .header-nav-btn {
-    background-color: $color-white;
-    color: $color-dark;
+    background-color: $color-blue;
+    color: $color-white;
     border: none;
 
     padding: 10px 24px;
@@ -155,8 +155,8 @@ header {
     letter-spacing: 0.15em;
 
     &:hover {
-      background: $color-blue;
-      color: $color-white;
+      background: $color-white;
+      color: $color-blue;
       cursor: pointer;
       border: none;
       transform: translateY(-4px);
@@ -166,9 +166,6 @@ header {
   .header-nav-logo:hover {
     cursor: pointer;
     fill: $color-blue;
-  }
-
-  .burger {
   }
 }
 
@@ -235,16 +232,16 @@ header {
       background-color: $color-dark;
       color: $color-white;
       border: none;
-      padding: 14px 40px;
+      padding: 12px 34px;
       text-decoration: none;
       border-radius: 100px;
       transition: all ease-in-out 0.2s;
       font-family: "Space Mono", sans-serif;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 500;
       text-align: center;
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-      letter-spacing: 0.15em;
+      letter-spacing: 0.12em;
       justify-content: center;
       outline: none;
 
@@ -467,6 +464,41 @@ header {
       }
     }
   }
+
+  .projects-container-btn {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 70px;
+
+    .projects-button {
+      background-color: $color-dark;
+      color: $color-white;
+      border: none;
+      padding: 14px 34px;
+      text-decoration: none;
+      border-radius: 100px;
+      transition: all ease-in-out 0.2s;
+      font-family: "Space Mono", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      letter-spacing: 0.12em;
+      justify-content: center;
+      outline: none;
+
+      &:hover {
+        background: $color-blue;
+        color: $color-white;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0px 15px 20px rgba(85, 82, 255, 0.4);
+        transform: translateY(-4px);
+      }
+    }
+  }
 }
 
 /*--------------CONTACT---------------*/
@@ -540,6 +572,7 @@ footer {
     width: 75%;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
+    z-index: 100;
     li {
       margin-top: 70px;
       margin-bottom: 60px;
@@ -631,6 +664,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    z-index: 100;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
     li {
