@@ -183,7 +183,7 @@ header {
 .section-hero-description {
   margin: auto;
   &__name {
-    font-family: "Calibre", sans-serif;
+    font-family: $main-font;
     color: $color-dark;
     font-size: 64px;
     text-align: center;
@@ -271,7 +271,7 @@ header {
     background-color: $color-dark;
     // border: 3px solid rgb(145, 255, 0);
     width: 1200px;
-    border-radius: 15px;
+    border-radius: 8px;
     padding: 28px 32px;
     display: flex;
     flex-direction: column;
@@ -348,7 +348,7 @@ header {
     .project-container-item {
       border: 0.5px solid rgb(221, 221, 221);
       justify-self: center;
-      border-radius: 15px;
+      border-radius: 8px;
       display: grid;
       transition: all ease-in-out 0.2s;
 
@@ -359,7 +359,7 @@ header {
 
         img {
           height: auto;
-          border-radius: 8px;
+          border-radius: 6px;
           justify-self: center;
         }
       }
@@ -533,15 +533,15 @@ header {
 /*--------------FOOTER---------------*/
 footer {
   width: 100%;
-  height: 50px;
+  height: 36px;
   background-color: $color-dark;
 
   p {
     font-family: $main-font;
     color: $color-gray-soft;
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 10px;
   }
 }
 
