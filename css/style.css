@@ -8,6 +8,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap");
 @font-face {
   font-family: "Calibre";
   src: url("/css/fonts/Calibre/Calibre-Medium.ttf"), url("/css/fonts/Calibre/Calibre-Medium.woff"), url("/css/fonts/Calibre/Calibre-Medium.woff2"), url("/css/fonts/Calibre/Calibre-Regular.ttf"), url("/css/fonts/Calibre/Calibre-Regular.woff"), url("/css/fonts/Calibre/Calibre-Regular.woff2"), url("/css/fonts/Calibre/Calibre-Semibold.ttf"), url("/css/fonts/Calibre/Calibre-Semibold.woff"), url("/css/fonts/Calibre/Calibre-Semibold.woff2");
@@ -810,52 +816,9 @@ header .header-nav-logo:hover {
   }
 }
 
-::-moz-selection {
-  color: #ffffff;
-  background: #5552ff;
-}
-
-::selection {
-  color: #ffffff;
-  background: #5552ff;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  color: #1e1e1e;
-  font-family: "Space Mono", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  text-align: center;
-}
-
-/* -----------------------SCROLLBAR-------------------- */
-/* width */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f6f6f6;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #828282;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+@font-face {
+  font-family: "Calibre";
+  src: url("/css/fonts/Calibre/Calibre-Medium.ttf"), url("/css/fonts/Calibre/Calibre-Medium.woff"), url("/css/fonts/Calibre/Calibre-Medium.woff2"), url("/css/fonts/Calibre/Calibre-Regular.ttf"), url("/css/fonts/Calibre/Calibre-Regular.woff"), url("/css/fonts/Calibre/Calibre-Regular.woff2"), url("/css/fonts/Calibre/Calibre-Semibold.ttf"), url("/css/fonts/Calibre/Calibre-Semibold.woff"), url("/css/fonts/Calibre/Calibre-Semibold.woff2");
 }
 
 /*--------------Skills---------------*/
@@ -949,6 +912,77 @@ h2 {
   text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+  /*--------------Skills---------------*/
+  .skills-content-img {
+    margin: 15px auto 0;
+  }
+  .skills-content {
+    margin-bottom: 48px;
+  }
+  .skills-content h3 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /*--------------Skills---------------*/
+  .skills-content-img {
+    margin: 15px auto;
+  }
+  .skills-content {
+    margin-top: 15px;
+    margin-bottom: 18px;
+  }
+  .skills-content h3 {
+    padding-top: 18px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  /*--------------Skills---------------*/
+  .skills-container-main {
+    height: 720px;
+  }
+  .skills-container_grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .skills-content {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  /*--------------Skills---------------*/
+  .skills-container-main {
+    height: 500px;
+  }
+  .skills-container_grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .skills-content {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .skills-content h3 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .skills-content-img {
+    margin: 0 auto;
+  }
+}
+
+@font-face {
+  font-family: "Calibre";
+  src: url("/css/fonts/Calibre/Calibre-Medium.ttf"), url("/css/fonts/Calibre/Calibre-Medium.woff"), url("/css/fonts/Calibre/Calibre-Medium.woff2"), url("/css/fonts/Calibre/Calibre-Regular.ttf"), url("/css/fonts/Calibre/Calibre-Regular.woff"), url("/css/fonts/Calibre/Calibre-Regular.woff2"), url("/css/fonts/Calibre/Calibre-Semibold.ttf"), url("/css/fonts/Calibre/Calibre-Semibold.woff"), url("/css/fonts/Calibre/Calibre-Semibold.woff2");
+}
+
 /*--------------CONTACT---------------*/
 .contact {
   height: 350px;
@@ -985,6 +1019,63 @@ h2 {
   color: #5552ff;
 }
 
+@media screen and (max-width: 480px) {
+  /*--------------Contact---------------*/
+  .contact-container {
+    padding: 50px 25px 50px;
+  }
+  .contact-container .contact-item {
+    padding: 10px 10px;
+  }
+  .contact-container .contact-item i {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /*--------------Contact---------------*/
+  .contact-container {
+    padding: 50px 25px 50px;
+  }
+  .contact-container .contact-item {
+    padding: 10px 15px;
+  }
+  .contact-container .contact-item i {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  /*--------------Contact---------------*/
+  .contact-container {
+    padding: 50px 25px 50px;
+  }
+  .contact-container .contact-item {
+    padding: 10px 32px;
+  }
+  .contact-container .contact-item i {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  /*--------------Contact---------------*/
+  .contact-container {
+    padding: 50px 25px 50px;
+  }
+  .contact-container .contact-item {
+    padding: 10px 32px;
+  }
+  .contact-container .contact-item i {
+    font-size: 36px;
+  }
+}
+
+@font-face {
+  font-family: "Calibre";
+  src: url("/css/fonts/Calibre/Calibre-Medium.ttf"), url("/css/fonts/Calibre/Calibre-Medium.woff"), url("/css/fonts/Calibre/Calibre-Medium.woff2"), url("/css/fonts/Calibre/Calibre-Regular.ttf"), url("/css/fonts/Calibre/Calibre-Regular.woff"), url("/css/fonts/Calibre/Calibre-Regular.woff2"), url("/css/fonts/Calibre/Calibre-Semibold.ttf"), url("/css/fonts/Calibre/Calibre-Semibold.woff"), url("/css/fonts/Calibre/Calibre-Semibold.woff2");
+}
+
 /*--------------FOOTER---------------*/
 footer {
   width: 100%;
@@ -1000,116 +1091,64 @@ footer p {
   padding-top: 10px;
 }
 
+::-moz-selection {
+  color: #ffffff;
+  background: #5552ff;
+}
+
+::selection {
+  color: #ffffff;
+  background: #5552ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #1e1e1e;
+  font-family: "Space Mono", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* -----------------------SCROLLBAR-------------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f6f6f6;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #828282;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 /*----------------------------------------------- Media Querys --------------------------------------------- */
 @media screen and (max-width: 480px) {
   body {
     overflow-x: hidden;
-  }
-  /*--------------Skills---------------*/
-  .skills-content-img {
-    margin: 15px auto 0;
-  }
-  .skills-content {
-    margin-bottom: 48px;
-  }
-  .skills-content h3 {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-  /*--------------Contact---------------*/
-  .contact-container {
-    padding: 50px 25px 50px;
-  }
-  .contact-container .contact-item {
-    padding: 10px 10px;
-  }
-  .contact-container .contact-item i {
-    font-size: 28px;
   }
 }
 
 @media screen and (min-width: 480px) {
   body {
     overflow-x: hidden;
-  }
-  /*--------------Skills---------------*/
-  .skills-content-img {
-    margin: 15px auto;
-  }
-  .skills-content {
-    margin-top: 15px;
-    margin-bottom: 18px;
-  }
-  .skills-content h3 {
-    padding-top: 18px;
-    padding-bottom: 24px;
-  }
-  /*--------------Contact---------------*/
-  .contact-container {
-    padding: 50px 25px 50px;
-  }
-  .contact-container .contact-item {
-    padding: 10px 15px;
-  }
-  .contact-container .contact-item i {
-    font-size: 32px;
-  }
-}
-
-@media screen and (min-width: 920px) {
-  /*--------------Skills---------------*/
-  .skills-container-main {
-    height: 720px;
-  }
-  .skills-container_grid {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-  .skills-content {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  /*--------------Contact---------------*/
-  .contact-container {
-    padding: 50px 25px 50px;
-  }
-  .contact-container .contact-item {
-    padding: 10px 32px;
-  }
-  .contact-container .contact-item i {
-    font-size: 36px;
-  }
-}
-
-@media screen and (min-width: 1380px) {
-  /*--------------Skills---------------*/
-  .skills-container-main {
-    height: 500px;
-  }
-  .skills-container_grid {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-  }
-  .skills-content {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .skills-content h3 {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-  .skills-content-img {
-    margin: 0 auto;
-  }
-  /*--------------Contact---------------*/
-  .contact-container {
-    padding: 50px 25px 50px;
-  }
-  .contact-container .contact-item {
-    padding: 10px 32px;
-  }
-  .contact-container .contact-item i {
-    font-size: 36px;
   }
 }
 /*# sourceMappingURL=style.css.map */

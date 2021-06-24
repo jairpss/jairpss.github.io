@@ -1,0 +1,83 @@
+@import "./variables.scss";
+
+/*--------------CONTACT---------------*/
+.contact {
+  height: 350px;
+  background-color: $color-gray-soft;
+  h2 {
+    color: $color-dark;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .contact-item {
+      i {
+        color: $color-dark;
+        transition: 0.2s;
+        &:hover {
+          color: $color-blue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  /*--------------Contact---------------*/
+  .contact-container {
+    padding: 50px 25px 50px;
+    .contact-item {
+      padding: 10px 10px;
+      i {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+
+  /*--------------Contact---------------*/
+  .contact-container {
+    padding: 50px 25px 50px;
+    .contact-item {
+      padding: 10px 15px;
+      i {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 920px) {
+
+  /*--------------Contact---------------*/
+  .contact-container {
+    padding: 50px 25px 50px;
+    .contact-item {
+      padding: 10px 32px;
+      i {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1380px) {
+
+  /*--------------Contact---------------*/
+  .contact-container {
+    padding: 50px 25px 50px;
+    .contact-item {
+      padding: 10px 32px;
+      i {
+        font-size: 36px;
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Calibre";
+  src: url("/css/fonts/Calibre/Calibre-Medium.ttf"), url("/css/fonts/Calibre/Calibre-Medium.woff"), url("/css/fonts/Calibre/Calibre-Medium.woff2"), url("/css/fonts/Calibre/Calibre-Regular.ttf"), url("/css/fonts/Calibre/Calibre-Regular.woff"), url("/css/fonts/Calibre/Calibre-Regular.woff2"), url("/css/fonts/Calibre/Calibre-Semibold.ttf"), url("/css/fonts/Calibre/Calibre-Semibold.woff"), url("/css/fonts/Calibre/Calibre-Semibold.woff2");
+}
+
+/*--------------CONTACT---------------*/
+.contact {
+  height: 350px;
+  background-color: #f6f6f6;
+}
+
+.contact h2 {
+  color: #1e1e1e;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.contact .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .contact-container .contact-item i {
+  color: #1e1e1e;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.contact .contact-container .contact-item i:hover {
+  color: #5552ff;
+}
+
+@media screen and (max-width: 480px) {
+  /*--------------Contact---------------*/
+  .contact-container {
+    padding: 50px 25px 50px;
+  }
+  .contact-container .contact-item {
+    padding: 10px 10px;
+  }
+  .contact-container .contact-item i {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /*--------------Contact---------------*/
+  .contact-container {
+    padding: 50px 25px 50px;
+  }
+  .contact-container .contact-item {
+    padding: 10px 15px;
+  }
+  .contact-container .contact-item i {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  /*--------------Contact---------------*/
+  .contact-container {
+    padding: 50px 25px 50px;
+  }
+  .contact-container .contact-item {
+    padding: 10px 32px;
+  }
+  .contact-container .contact-item i {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  /*--------------Contact---------------*/
+  .contact-container {
+    padding: 50px 25px 50px;
+  }
+  .contact-container .contact-item {
+    padding: 10px 32px;
+  }
+  .contact-container .contact-item i {
+    font-size: 36px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
