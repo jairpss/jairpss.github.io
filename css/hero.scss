@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+/*-----------HERO--------------*/
+
+.section-hero-container {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 15px;
+}
+
+.section-hero-description {
+  margin: auto;
+  &__name {
+    font-family: "Calibre";
+    color: #2e2e2e;
+    font-size: 80px;
+    text-align: center;
+  }
+
+  &__job {
+    font-family: $second-font;
+    font-size: 32px;
+    color: $color-blue;
+    text-align: center;
+    letter-spacing: 0.2em;
+  }
+}
+
+.section-hero-img {
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 80px;
+}

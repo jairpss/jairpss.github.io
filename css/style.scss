@@ -1,6 +1,8 @@
 @import "./variables.scss";
 @import "./header.scss";
 @import "./projects.scss";
+@import "./hero.scss";
+@import "./profile.scss";
 
 ::selection {
   color: $color-white;
@@ -43,92 +45,6 @@ h2 {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-
-/*-----------HERO--------------*/
-
-.section-hero-container {
-  display: flex;
-  flex-direction: column;
-  margin: 80px 15px;
-}
-
-.section-hero-description {
-  margin: auto;
-  &__name {
-    font-family: "Calibre";
-    color: #2e2e2e;
-    font-size: 80px;
-    text-align: center;
-  }
-
-  &__job {
-    font-family: $second-font;
-    font-size: 32px;
-    color: $color-blue;
-    text-align: center;
-    letter-spacing: 0.2em;
-  }
-}
-
-.section-hero-img {
-  margin: auto;
-  justify-content: center;
-  margin-bottom: 80px;
-}
-
-/*--------------PROFILE---------------*/
-.section-aboutme-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  .section-aboutme-description {
-    font-family: $main-font;
-    color: $color-gray-dark;
-    line-height: 2.3rem;
-    font-size: 20px;
-    text-align: center;
-    white-space: normal;
-    word-break: normal;
-
-    b {
-      color: $color-blue;
-      font-family: $main-font;
-      font-weight: 700;
-    }
-  }
-  .section-aboutme-btn-container {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-top: 80px;
-
-    .section-aboutme-button {
-      background-color: $color-dark;
-      color: $color-white;
-      border: none;
-      text-decoration: none;
-      border-radius: 100px;
-      transition: all ease-in-out 0.2s;
-      font-family: $second-font;
-      font-size: 14px;
-      font-weight: 500;
-      text-align: center;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-      justify-content: center;
-      outline: none;
-
-      &:hover {
-        background: $color-blue;
-        color: $color-white;
-        cursor: pointer;
-        border: none;
-        box-shadow: 0px 15px 20px rgba(85, 82, 255, 0.4);
-        transform: translateY(-4px);
-      }
-    }
-  }
 }
 
 /*--------------Skills---------------*/
@@ -247,16 +163,6 @@ footer {
     overflow-x: hidden;
   }
 
-  /*--------------About---------------*/
-  .section-aboutme-container {
-    margin: 120px 14px 120px 14px;
-  }
-
-  .section-aboutme-button {
-    padding: 12px 168px;
-    letter-spacing: 0.12em;
-  }
-
   /*--------------Skills---------------*/
   .skills-content-img {
     margin: 15px auto 0;
@@ -287,15 +193,6 @@ footer {
     overflow-x: hidden;
   }
 
-  /*--------------About---------------*/
-  .section-aboutme-container {
-    margin: 120px 60px 120px 60px;
-  }
-
-  .section-aboutme-button {
-    padding: 12px 34px;
-    letter-spacing: 0.12em;
-  }
   /*--------------Skills---------------*/
   .skills-content-img {
     margin: 15px auto;
@@ -323,10 +220,6 @@ footer {
 }
 
 @media screen and (min-width: 920px) {
-  .section-aboutme-button {
-    padding: 12px 34px;
-    letter-spacing: 0.12em;
-  }
   /*--------------Skills---------------*/
   .skills-container-main {
     height: 720px;
@@ -353,16 +246,6 @@ footer {
 }
 
 @media screen and (min-width: 1380px) {
-  /*--------------About---------------*/
-
-  .section-aboutme-container {
-    margin: 120px 100px 120px 100px;
-  }
-
-  .section-aboutme-button {
-    padding: 12px 34px;
-    letter-spacing: 0.12em;
-  }
   /*--------------Skills---------------*/
   .skills-container-main {
     height: 500px;

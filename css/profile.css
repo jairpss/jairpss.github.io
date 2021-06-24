@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Calibre";
+  src: url("/css/fonts/Calibre/Calibre-Medium.ttf"), url("/css/fonts/Calibre/Calibre-Medium.woff"), url("/css/fonts/Calibre/Calibre-Medium.woff2"), url("/css/fonts/Calibre/Calibre-Regular.ttf"), url("/css/fonts/Calibre/Calibre-Regular.woff"), url("/css/fonts/Calibre/Calibre-Regular.woff2"), url("/css/fonts/Calibre/Calibre-Semibold.ttf"), url("/css/fonts/Calibre/Calibre-Semibold.woff"), url("/css/fonts/Calibre/Calibre-Semibold.woff2");
+}
+
+/*--------------PROFILE---------------*/
+.section-aboutme-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-aboutme-container .section-aboutme-description {
+  font-family: "Inter", sans-serif;
+  color: #828282;
+  text-align: center;
+  white-space: normal;
+  word-break: normal;
+}
+
+.section-aboutme-container .section-aboutme-description b {
+  color: #5552ff;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.section-aboutme-container .section-aboutme-btn-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+}
+
+.section-aboutme-container .section-aboutme-btn-container .section-aboutme-button {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+  border-radius: 100px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  font-family: "Space Mono", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+}
+
+.section-aboutme-container .section-aboutme-btn-container .section-aboutme-button:hover {
+  background: #5552ff;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  -webkit-box-shadow: 0px 15px 20px rgba(85, 82, 255, 0.4);
+          box-shadow: 0px 15px 20px rgba(85, 82, 255, 0.4);
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+@media screen and (max-width: 480px) {
+  .section-aboutme-description {
+    line-height: 2rem;
+    font-size: 16px;
+  }
+  /*--------------About---------------*/
+  .section-aboutme-container {
+    margin: 120px 14px 120px 14px;
+  }
+  .section-aboutme-button {
+    padding: 12px 138px;
+    letter-spacing: 0.12em;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /*--------------About---------------*/
+  .section-aboutme-description {
+    line-height: 2.3rem;
+    font-size: 18px;
+  }
+  .section-aboutme-container {
+    margin: 120px 60px 120px 60px;
+  }
+  .section-aboutme-button {
+    padding: 12px 34px;
+    letter-spacing: 0.12em;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .section-aboutme-description {
+    line-height: 2.3rem;
+    font-size: 20px;
+  }
+  .section-aboutme-button {
+    padding: 12px 34px;
+    letter-spacing: 0.12em;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  /*--------------About---------------*/
+  .section-aboutme-description {
+    line-height: 2.3rem;
+    font-size: 20px;
+  }
+  .section-aboutme-container {
+    margin: 120px 100px 120px 100px;
+  }
+  .section-aboutme-button {
+    padding: 12px 34px;
+    letter-spacing: 0.12em;
+  }
+}
+/*# sourceMappingURL=profile.css.map */
