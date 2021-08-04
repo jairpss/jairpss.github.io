@@ -82,7 +82,6 @@ header {
     background-color: $color-blue;
     color: $color-white;
     border: none;
-
     padding: 10px 24px;
     text-decoration: none;
     border-radius: 100px;
@@ -98,7 +97,7 @@ header {
       color: $color-blue;
       cursor: pointer;
       border: none;
-      transform: translateY(-4px);
+      // transform: translateY(-4px);
     }
   }
   /*-----------Logo--------------*/

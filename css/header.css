@@ -131,8 +131,6 @@ header .header-nav-btn:hover {
   color: #5552ff;
   cursor: pointer;
   border: none;
-  -webkit-transform: translateY(-4px);
-          transform: translateY(-4px);
 }
 
 header .header-nav-logo:hover {
