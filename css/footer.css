@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
 @font-face {
   font-family: "Calibre";
   src: url("/css/fonts/Calibre/Calibre-Medium.ttf"), url("/css/fonts/Calibre/Calibre-Medium.woff"), url("/css/fonts/Calibre/Calibre-Medium.woff2"), url("/css/fonts/Calibre/Calibre-Regular.ttf"), url("/css/fonts/Calibre/Calibre-Regular.woff"), url("/css/fonts/Calibre/Calibre-Regular.woff2"), url("/css/fonts/Calibre/Calibre-Semibold.ttf"), url("/css/fonts/Calibre/Calibre-Semibold.woff"), url("/css/fonts/Calibre/Calibre-Semibold.woff2");
@@ -13,7 +14,7 @@ footer {
 }
 
 footer p {
-  font-family: "Inter", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   color: #f6f6f6;
   font-size: 13px;
   text-align: center;
