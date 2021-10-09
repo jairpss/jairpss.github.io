@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
-@font-face {
-  font-family: "Calibre";
-  src: url("/css/fonts/Calibre/Calibre-Medium.ttf"), url("/css/fonts/Calibre/Calibre-Medium.woff"), url("/css/fonts/Calibre/Calibre-Medium.woff2"), url("/css/fonts/Calibre/Calibre-Regular.ttf"), url("/css/fonts/Calibre/Calibre-Regular.woff"), url("/css/fonts/Calibre/Calibre-Regular.woff2"), url("/css/fonts/Calibre/Calibre-Semibold.ttf"), url("/css/fonts/Calibre/Calibre-Semibold.woff"), url("/css/fonts/Calibre/Calibre-Semibold.woff2");
-}
-
 /*--------------Skills---------------*/
 .skills-container {
   display: -webkit-box;
@@ -28,7 +22,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 35px 35px;
+  margin: 36px 36px;
 }
 
 .skills-container .skills-container-main .skills-container-title h2 {
@@ -72,7 +66,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Epilogue", sans-serif;
   color: #ececec;
 }
 
@@ -99,6 +93,9 @@
 
 @media screen and (max-width: 480px) {
   /*--------------Skills---------------*/
+  .skills-container-main {
+    margin: 36px 20px;
+  }
   .skills-content-img {
     margin: 15px auto 0;
   }

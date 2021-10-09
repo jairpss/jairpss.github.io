@@ -13,7 +13,7 @@
     padding: 28px 32px;
     display: flex;
     flex-direction: column;
-    margin: 35px 35px;
+    margin: 36px 36px;
 
     .skills-container-title {
       h2 {
@@ -69,7 +69,10 @@
 }
 
 @media screen and (max-width: 480px) {
-    /*--------------Skills---------------*/
+  /*--------------Skills---------------*/
+  .skills-container-main {
+    margin: 36px 20px;
+  }
   .skills-content-img {
     margin: 15px auto 0;
   }
@@ -84,7 +87,7 @@
 }
 
 @media screen and (min-width: 480px) {
-    /*--------------Skills---------------*/
+  /*--------------Skills---------------*/
   .skills-content-img {
     margin: 15px auto;
   }
