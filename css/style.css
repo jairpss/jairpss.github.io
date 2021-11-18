@@ -357,6 +357,7 @@ header .header-nav-logo:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-bottom: 1px solid #e6e6e6;
+  max-height: 250px;
 }
 
 .projects-section .projects-container .project-container-item .project-container-img img {
@@ -806,7 +807,7 @@ header .header-nav-logo:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 35px 35px;
+  margin: 36px 36px;
 }
 
 .skills-container .skills-container-main .skills-container-title h2 {
@@ -877,6 +878,9 @@ header .header-nav-logo:hover {
 
 @media screen and (max-width: 480px) {
   /*--------------Skills---------------*/
+  .skills-container-main {
+    margin: 36px 20px;
+  }
   .skills-content-img {
     margin: 15px auto 0;
   }
