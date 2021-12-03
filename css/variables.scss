@@ -8,8 +8,9 @@ $color-gray-dark: #828282;
 
 // ##-----Fonts-----##
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap");
 //@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap");
 
 // @font-face {
 //   font-family: "Calibre";
@@ -25,6 +26,6 @@ $color-gray-dark: #828282;
 // }
 
 // $main-font: "Inter", sans-serif;
-$main-font: "Epilogue", sans-serif;
+$main-font: "Outfit", sans-serif;
 $second-font: "Space Mono", sans-serif;
-$third-font: "Epilogue", sans-serif;
+$third-font: "Outfit", sans-serif;

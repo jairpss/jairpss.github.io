@@ -357,7 +357,6 @@ header .header-nav-logo:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-bottom: 1px solid #e6e6e6;
-  max-height: 250px;
 }
 
 .projects-section .projects-container .project-container-item .project-container-img img {
