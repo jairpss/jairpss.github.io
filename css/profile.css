@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap");
 /*--------------PROFILE---------------*/
 .section-aboutme-container {
   display: -webkit-box;
@@ -15,7 +15,7 @@
 }
 
 .section-aboutme-container .section-aboutme-description {
-  font-family: "Epilogue", sans-serif;
+  font-family: "Outfit", sans-serif;
   color: #828282;
   text-align: center;
   white-space: normal;
@@ -24,7 +24,7 @@
 
 .section-aboutme-container .section-aboutme-description b {
   color: #5552ff;
-  font-family: "Epilogue", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 700;
 }
 
