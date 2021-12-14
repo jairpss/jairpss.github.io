@@ -658,6 +658,13 @@ header .header-nav-logo:hover {
   margin-bottom: 80px;
 }
 
+@media screen and (max-width: 480px) {
+  .section-hero-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 /*--------------PROFILE---------------*/
 .section-aboutme-container {
   display: -webkit-box;

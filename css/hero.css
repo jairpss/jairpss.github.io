@@ -9,7 +9,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 80px 15px;
+  margin: 60px 15px;
 }
 
 .section-hero-description {
@@ -37,5 +37,14 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 80px;
+}
+
+@media screen and (max-width: 480px) {
+  .section-hero-container {
+    margin: 20px 15px;
+  }
+  .section-hero-img {
+    margin: 20px auto;
+  }
 }
 /*# sourceMappingURL=hero.css.map */
