@@ -125,7 +125,7 @@ header .header-nav-btn {
   border: none;
   padding: 10px 24px;
   text-decoration: none;
-  border-radius: 100px;
+  border-radius: 8px;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   font-family: "Space Mono", sans-serif;
@@ -410,7 +410,7 @@ header .header-nav-logo:hover {
   font-weight: 500;
   background: #5552ff;
   border: 2px solid transparent;
-  border-radius: 50px;
+  border-radius: 8px;
   color: #ffffff;
   display: inline-block;
   height: 26px;
@@ -442,7 +442,7 @@ header .header-nav-logo:hover {
   font-weight: 500;
   background: #1e1e1e;
   border: 2px solid transparent;
-  border-radius: 50px;
+  border-radius: 8px;
   color: #ffffff;
   display: inline-block;
   height: 26px;
@@ -494,7 +494,7 @@ header .header-nav-logo:hover {
   color: #ffffff;
   border: none;
   text-decoration: none;
-  border-radius: 100px;
+  border-radius: 8px;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   font-family: "Space Mono", sans-serif;
@@ -713,7 +713,7 @@ header .header-nav-logo:hover {
   color: #ffffff;
   border: none;
   text-decoration: none;
-  border-radius: 100px;
+  border-radius: 8px;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   font-family: "Space Mono", sans-serif;

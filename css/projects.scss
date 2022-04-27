@@ -70,7 +70,7 @@
           font-weight: 500;
           background: $color-blue;
           border: 2px solid transparent;
-          border-radius: 50px;
+          border-radius: 8px;
           color: $color-white;
           display: inline-block;
           height: 26px;
@@ -99,7 +99,7 @@
           font-weight: 500;
           background: $color-dark;
           border: 2px solid transparent;
-          border-radius: 50px;
+          border-radius: 8px;
           color: $color-white;
           display: inline-block;
           height: 26px;
@@ -141,7 +141,7 @@
       color: $color-white;
       border: none;
       text-decoration: none;
-      border-radius: 100px;
+      border-radius: 8px;
       transition: all ease-in-out 0.2s;
       font-family: $second-font;
       font-size: 14px;
