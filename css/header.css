@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 /*----------Header------------*/
 header {
   /*-----------Links and button--------------*/
@@ -21,8 +22,8 @@ header .header-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #1e1e1e;
-  color: #ffffff;
+  background: #ffffff;
+  color: #1e1e1e;
   height: 40px;
 }
 
@@ -42,17 +43,17 @@ header li {
 }
 
 header .header-nav-link {
-  color: #ffffff;
+  color: #1e1e1e;
   text-decoration: none;
   position: relative;
-  font-family: "Space Mono", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 14px;
   text-align: center;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   padding-bottom: 8px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 header .header-nav-link:before, header .header-nav-link:after {
@@ -106,26 +107,29 @@ header .header-nav-link:hover:after, header .header-nav-link:focus:after {
 }
 
 header .header-nav-btn {
-  background-color: #5552ff;
-  color: #ffffff;
-  border: none;
-  padding: 10px 24px;
+  background-color: transparent;
+  color: #1e1e1e;
+  border: 2px solid #1e1e1e;
+  padding: 8px 20px;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 4px;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
-  font-family: "Space Mono", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.02em;
+  transition: all ease-in-out 0.2s;
 }
 
 header .header-nav-btn:hover {
-  background: #ffffff;
-  color: #5552ff;
+  background: transparent;
+  color: #1e1e1e;
+  border: 2px solid #1e1e1e;
   cursor: pointer;
-  border: none;
+  -webkit-box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.4);
+          box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.4);
 }
 
 header .header-nav-logo:hover {

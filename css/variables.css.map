@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AASA,OAAO,CAAC,kIAAI;AAEZ,OAAO,CAAC,6GAAI",
+    "mappings": "AASA,OAAO,CAAC,kIAAI;AAEZ,OAAO,CAAC,6GAAI;AAEZ,OAAO,CAAC,mGAAI",
     "sources": [
         "variables.scss"
     ],

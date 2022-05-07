@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 /*-----------HERO--------------*/
 .section-hero-container {
   display: -webkit-box;
@@ -17,14 +18,14 @@
 }
 
 .section-hero-description__name {
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   color: #2e2e2e;
-  font-size: 80px;
+  font-size: 100px;
   text-align: center;
 }
 
 .section-hero-description__job {
-  font-family: "Space Mono", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 32px;
   color: #5552ff;
   text-align: center;

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 /*--------------PROFILE---------------*/
 .section-aboutme-container {
   display: -webkit-box;
@@ -42,19 +43,17 @@
 }
 
 .section-aboutme-container .section-aboutme-btn-container .section-aboutme-button {
-  background-color: #1e1e1e;
-  color: #ffffff;
-  border: none;
+  background-color: transparent;
+  color: #1e1e1e;
+  border: 3px solid #1e1e1e;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 4px;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
-  font-family: "Space Mono", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 14px;
   font-weight: 500;
   text-align: center;
-  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -62,12 +61,12 @@
 }
 
 .section-aboutme-container .section-aboutme-btn-container .section-aboutme-button:hover {
-  background: #5552ff;
-  color: #ffffff;
+  background: transparent;
+  color: #1e1e1e;
+  border: 3px solid #1e1e1e;
   cursor: pointer;
-  border: none;
-  -webkit-box-shadow: 0px 15px 20px rgba(85, 82, 255, 0.4);
-          box-shadow: 0px 15px 20px rgba(85, 82, 255, 0.4);
+  -webkit-box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
+          box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
 }
 
 @media screen and (max-width: 480px) {
