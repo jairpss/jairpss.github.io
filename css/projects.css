@@ -17,7 +17,7 @@
   border: 0.5px solid #dddddd;
   -ms-grid-column-align: center;
       justify-self: center;
-  border-radius: 8px;
+  border-radius: 4px;
   display: -ms-grid;
   display: grid;
   -webkit-transition: all ease-in-out 0.2s;
@@ -83,7 +83,7 @@
   font-weight: 500;
   background: #5552ff;
   border: 2px solid transparent;
-  border-radius: 8px;
+  border-radius: 4px;
   color: #ffffff;
   display: inline-block;
   height: 26px;
@@ -115,7 +115,7 @@
   font-weight: 500;
   background: #1e1e1e;
   border: 2px solid transparent;
-  border-radius: 8px;
+  border-radius: 4px;
   color: #ffffff;
   display: inline-block;
   height: 26px;
@@ -163,19 +163,17 @@
 }
 
 .projects-section .projects-container-btn .projects-button {
-  background-color: #1e1e1e;
-  color: #ffffff;
-  border: none;
+  background-color: transparent;
+  color: #1e1e1e;
+  border: 3px solid #1e1e1e;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 4px;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   font-family: "Space Grotesk", sans-serif;
   font-size: 14px;
   font-weight: 500;
   text-align: center;
-  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   letter-spacing: 0.12em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -184,12 +182,12 @@
 }
 
 .projects-section .projects-container-btn .projects-button:hover {
-  background: #5552ff;
-  color: #ffffff;
+  background: transparent;
+  color: #1e1e1e;
+  border: 3px solid #1e1e1e;
   cursor: pointer;
-  border: none;
-  -webkit-box-shadow: 0px 15px 20px rgba(85, 82, 255, 0.4);
-          box-shadow: 0px 15px 20px rgba(85, 82, 255, 0.4);
+  -webkit-box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
+          box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
 }
 
 @media screen and (max-width: 480px) {

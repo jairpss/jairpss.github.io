@@ -14,7 +14,7 @@
 .skills-container .skills-container-main {
   background-color: #1e1e1e;
   width: 1200px;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 28px 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,19 +30,6 @@
   color: #ffffff;
   padding-top: 24px;
   padding-bottom: 24px;
-}
-
-.skills-container .skills-container-main .skills-container-title h2 .underline {
-  background-image: linear-gradient(120deg, #5552ff 0%, #5552ff 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  -webkit-transition: background-size 0.25s ease-in;
-  transition: background-size 0.25s ease-in;
-}
-
-.skills-container .skills-container-main .skills-container-title h2 .underline:hover {
-  background-size: 100% 88%;
 }
 
 .skills-container .skills-container-main .skills-container_grid {
