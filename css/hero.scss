@@ -10,17 +10,26 @@
 
 .section-hero-description {
   margin: auto;
+  // max-width:800px;
+  .hero-welcome{
+    font-family: $second-font;
+    color: $color-dark;
+  }
   &__name {
     font-family: $second-font;
-    color: #2e2e2e;
-    font-size: 100px;
+    // color: transparent;
+    font-size: 120px;
     text-align: center;
+    background: #5552FF;
+    background: linear-gradient(to right, #5552FF 0%, #8525CF 100%);
+    -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
   }
 
   &__job {
     font-family: $second-font;
     font-size: 32px;
-    color: $color-blue;
+    color: $color-dark;
     text-align: center;
     letter-spacing: 0.2em;
   }

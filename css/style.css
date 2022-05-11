@@ -77,54 +77,8 @@ header .header-nav-link {
   font-weight: 500;
 }
 
-header .header-nav-link:before, header .header-nav-link:after {
-  content: "";
-  position: absolute;
-  bottom: 2px;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background-color: rgba(85, 82, 255, 0.4);
-}
-
-header .header-nav-link:before {
-  opacity: 0;
-  -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
-  -webkit-transition: opacity 0s, -webkit-transform 0s;
-  transition: opacity 0s, -webkit-transform 0s;
-  transition: transform 0s, opacity 0s;
-  transition: transform 0s, opacity 0s, -webkit-transform 0s;
-}
-
-header .header-nav-link:after {
-  opacity: 0;
-  -webkit-transform: translateY(8px/2);
-          transform: translateY(8px/2);
-  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-header .header-nav-link:hover:before, header .header-nav-link:hover:after, header .header-nav-link:focus:before, header .header-nav-link:focus:after {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-header .header-nav-link:hover:before, header .header-nav-link:focus:before {
-  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-header .header-nav-link:hover:after, header .header-nav-link:focus:after {
-  -webkit-transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
-  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+header .header-nav-link:hover, header .header-nav-link:focus {
+  font-weight: 700;
 }
 
 header .header-nav-btn {
@@ -642,19 +596,29 @@ header .header-nav-logo:hover {
 
 .section-hero-description {
   margin: auto;
+  max-width: 800px;
+}
+
+.section-hero-description .hero-welcome {
+  font-family: "Space Grotesk", sans-serif;
+  color: #1e1e1e;
 }
 
 .section-hero-description__name {
   font-family: "Space Grotesk", sans-serif;
-  color: #2e2e2e;
-  font-size: 100px;
+  font-size: 130px;
   text-align: center;
+  background: #5552FF;
+  background: -webkit-gradient(linear, left top, right top, from(#5552FF), to(#8525CF));
+  background: linear-gradient(to right, #5552FF 0%, #8525CF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .section-hero-description__job {
   font-family: "Space Grotesk", sans-serif;
   font-size: 32px;
-  color: #5552ff;
+  color: #1e1e1e;
   text-align: center;
   letter-spacing: 0.2em;
 }
@@ -691,16 +655,18 @@ header .header-nav-logo:hover {
 }
 
 .section-aboutme-container .section-aboutme-description {
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   color: #828282;
   text-align: center;
   white-space: normal;
   word-break: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .section-aboutme-container .section-aboutme-description b {
   color: #5552ff;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
 }
 

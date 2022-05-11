@@ -7,15 +7,17 @@
   justify-content: center;
 
   .section-aboutme-description {
-    font-family: $third-font;
+    font-family: $second-font;
     color: $color-gray-dark;
     text-align: center;
     white-space: normal;
     word-break: normal;
+    font-size: 16px;
+    line-height: 24px;
 
     b {
       color: $color-blue;
-      font-family: $third-font;
+      font-family: $inter;
       font-weight: 700;
     }
   }
