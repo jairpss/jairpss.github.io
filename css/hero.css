@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 /*-----------HERO--------------*/
 .section-hero-container {
   display: -webkit-box;
@@ -24,7 +23,7 @@
 
 .section-hero-description__name {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 120px;
+  font-size: 110px;
   text-align: center;
   background: #5552FF;
   background: -webkit-gradient(linear, left top, right top, from(#5552FF), to(#8525CF));

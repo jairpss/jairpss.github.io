@@ -12,13 +12,13 @@
   margin: auto;
   // max-width:800px;
   .hero-welcome{
-    font-family: $second-font;
+    font-family: $main-font;
     color: $color-dark;
   }
   &__name {
-    font-family: $second-font;
+    font-family: $main-font;
     // color: transparent;
-    font-size: 120px;
+    font-size: 110px;
     text-align: center;
     background: #5552FF;
     background: linear-gradient(to right, #5552FF 0%, #8525CF 100%);
@@ -27,7 +27,7 @@
   }
 
   &__job {
-    font-family: $second-font;
+    font-family: $main-font;
     font-size: 32px;
     color: $color-dark;
     text-align: center;

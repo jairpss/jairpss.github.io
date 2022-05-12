@@ -1,28 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 /*----------Header------------*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 header {
   /*-----------Links and button--------------*/
   /*-----------Logo--------------*/
@@ -333,7 +325,7 @@ header .header-nav-logo:hover {
 
 .projects-section .projects-container .project-container-item h3 {
   color: #5552ff;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   font-size: 20px;
   text-align: left;
@@ -342,7 +334,7 @@ header .header-nav-logo:hover {
 
 .projects-section .projects-container .project-container-item p {
   color: #828282;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 14px;
   padding: 20px 40px;
 }
@@ -596,7 +588,6 @@ header .header-nav-logo:hover {
 
 .section-hero-description {
   margin: auto;
-  max-width: 800px;
 }
 
 .section-hero-description .hero-welcome {
@@ -606,7 +597,7 @@ header .header-nav-logo:hover {
 
 .section-hero-description__name {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 130px;
+  font-size: 110px;
   text-align: center;
   background: #5552FF;
   background: -webkit-gradient(linear, left top, right top, from(#5552FF), to(#8525CF));
@@ -666,7 +657,7 @@ header .header-nav-logo:hover {
 
 .section-aboutme-container .section-aboutme-description b {
   color: #5552ff;
-  font-family: "Inter", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
 }
 
@@ -819,7 +810,7 @@ header .header-nav-logo:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   color: #ececec;
 }
 
@@ -1009,7 +1000,7 @@ footer {
 }
 
 footer p {
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   color: #f6f6f6;
   font-size: 13px;
   text-align: center;
