@@ -3,13 +3,14 @@
 /*--------------CONTACT---------------*/
 .contact {
   height: 350px;
-  background-color: #f6f6f6;
+  background-color: #EBEBEF;
 }
 
 .contact h2 {
-  color: #1e1e1e;
+  color: #161624;
   padding-top: 50px;
   padding-bottom: 30px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .contact .contact-container {
@@ -27,7 +28,7 @@
 }
 
 .contact .contact-container .contact-item i {
-  color: #1e1e1e;
+  color: #161624;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }

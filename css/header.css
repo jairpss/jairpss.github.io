@@ -21,8 +21,8 @@ header .header-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #ffffff;
-  color: #1e1e1e;
+  background: #FEFEFE;
+  color: #161624;
   height: 40px;
 }
 
@@ -42,7 +42,7 @@ header li {
 }
 
 header .header-nav-link {
-  color: #1e1e1e;
+  color: #161624;
   text-decoration: none;
   position: relative;
   font-family: "Space Grotesk", sans-serif;
@@ -61,11 +61,11 @@ header .header-nav-link:hover, header .header-nav-link:focus {
 
 header .header-nav-btn {
   background-color: transparent;
-  color: #1e1e1e;
-  border: 2px solid #1e1e1e;
+  color: #161624;
+  border: 2px solid #161624;
   padding: 8px 20px;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   font-family: "Space Grotesk", sans-serif;
@@ -78,8 +78,8 @@ header .header-nav-btn {
 
 header .header-nav-btn:hover {
   background: transparent;
-  color: #1e1e1e;
-  border: 2px solid #1e1e1e;
+  color: #161624;
+  border: 2px solid #161624;
   cursor: pointer;
   -webkit-box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.4);
           box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.4);
@@ -87,7 +87,6 @@ header .header-nav-btn:hover {
 
 header .header-nav-logo:hover {
   cursor: pointer;
-  fill: #5552ff;
 }
 
 @media screen and (max-width: 480px) {
@@ -106,9 +105,9 @@ header .header-nav-logo:hover {
     right: 0px;
     height: 92vh;
     top: 80px;
-    background-color: rgba(238, 238, 238, 0.9);
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.36);
+    -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -158,9 +157,9 @@ header .header-nav-logo:hover {
     right: 0px;
     height: 92vh;
     top: 80px;
-    background-color: rgba(238, 238, 238, 0.9);
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.36);
+    -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

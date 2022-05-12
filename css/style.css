@@ -35,8 +35,8 @@ header .header-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #ffffff;
-  color: #1e1e1e;
+  background: #FEFEFE;
+  color: #161624;
   height: 40px;
 }
 
@@ -56,7 +56,7 @@ header li {
 }
 
 header .header-nav-link {
-  color: #1e1e1e;
+  color: #161624;
   text-decoration: none;
   position: relative;
   font-family: "Space Grotesk", sans-serif;
@@ -75,11 +75,11 @@ header .header-nav-link:hover, header .header-nav-link:focus {
 
 header .header-nav-btn {
   background-color: transparent;
-  color: #1e1e1e;
-  border: 2px solid #1e1e1e;
+  color: #161624;
+  border: 2px solid #161624;
   padding: 8px 20px;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   font-family: "Space Grotesk", sans-serif;
@@ -92,8 +92,8 @@ header .header-nav-btn {
 
 header .header-nav-btn:hover {
   background: transparent;
-  color: #1e1e1e;
-  border: 2px solid #1e1e1e;
+  color: #161624;
+  border: 2px solid #161624;
   cursor: pointer;
   -webkit-box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.4);
           box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.4);
@@ -101,7 +101,6 @@ header .header-nav-btn:hover {
 
 header .header-nav-logo:hover {
   cursor: pointer;
-  fill: #5552ff;
 }
 
 @media screen and (max-width: 480px) {
@@ -120,9 +119,9 @@ header .header-nav-logo:hover {
     right: 0px;
     height: 92vh;
     top: 80px;
-    background-color: rgba(238, 238, 238, 0.9);
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.36);
+    -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -172,9 +171,9 @@ header .header-nav-logo:hover {
     right: 0px;
     height: 92vh;
     top: 80px;
-    background-color: rgba(238, 238, 238, 0.9);
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.36);
+    -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -287,8 +286,9 @@ header .header-nav-logo:hover {
 
 /*--------------Projects---------------*/
 .projects-section h2 {
-  color: #1e1e1e;
+  color: #161624;
   padding-top: 50px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .projects-section .projects-container {
@@ -298,10 +298,10 @@ header .header-nav-logo:hover {
 }
 
 .projects-section .projects-container .project-container-item {
-  border: 0.5px solid #dddddd;
+  border: 3px solid rgba(240, 240, 240, 0.4);
   -ms-grid-column-align: center;
       justify-self: center;
-  border-radius: 4px;
+  border-radius: 6px;
   display: -ms-grid;
   display: grid;
   -webkit-transition: all ease-in-out 0.2s;
@@ -333,7 +333,7 @@ header .header-nav-logo:hover {
 }
 
 .projects-section .projects-container .project-container-item p {
-  color: #828282;
+  color: #44444F;
   font-family: "Space Grotesk", sans-serif;
   font-size: 14px;
   padding: 20px 40px;
@@ -365,10 +365,10 @@ header .header-nav-logo:hover {
   font-family: "Space Grotesk", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  background: #5552ff;
-  border: 2px solid transparent;
-  border-radius: 4px;
-  color: #ffffff;
+  background: #FEFEFE;
+  border: 2px solid #5552ff;
+  border-radius: 6px;
+  color: #5552ff;
   display: inline-block;
   height: 26px;
   line-height: 26px;
@@ -380,8 +380,8 @@ header .header-nav-logo:hover {
 }
 
 .projects-section .projects-container .project-container-item .btn-container .projects-btn_blue:hover {
-  background-color: #f6f6f6;
-  color: #5552ff;
+  background-color: #5552ff;
+  color: #FEFEFE;
   border: 2px solid #5552ff;
 }
 
@@ -397,10 +397,10 @@ header .header-nav-logo:hover {
   font-family: "Space Grotesk", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  background: #1e1e1e;
-  border: 2px solid transparent;
-  border-radius: 4px;
-  color: #ffffff;
+  background: #FEFEFE;
+  border: 2px solid #161624;
+  border-radius: 6px;
+  color: #161624;
   display: inline-block;
   height: 26px;
   line-height: 26px;
@@ -412,9 +412,9 @@ header .header-nav-logo:hover {
 }
 
 .projects-section .projects-container .project-container-item .btn-container .projects-btn_dark:hover {
-  background-color: #f6f6f6;
-  color: #1e1e1e;
-  border: 2px solid #1e1e1e;
+  background-color: #161624;
+  color: #FEFEFE;
+  border: 2px solid #161624;
 }
 
 .projects-section .projects-container .project-container-item .btn-container .projects-btn_dark img {
@@ -426,8 +426,6 @@ header .header-nav-logo:hover {
 }
 
 .projects-section .projects-container .project-container-item:hover {
-  -webkit-box-shadow: 0px 1px 40px rgba(99, 99, 100, 0.18);
-          box-shadow: 0px 1px 40px rgba(99, 99, 100, 0.18);
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
 }
@@ -448,10 +446,10 @@ header .header-nav-logo:hover {
 
 .projects-section .projects-container-btn .projects-button {
   background-color: transparent;
-  color: #1e1e1e;
-  border: 3px solid #1e1e1e;
+  color: #161624;
+  border: 2px solid #161624;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   font-family: "Space Grotesk", sans-serif;
@@ -467,8 +465,8 @@ header .header-nav-logo:hover {
 
 .projects-section .projects-container-btn .projects-button:hover {
   background: transparent;
-  color: #1e1e1e;
-  border: 3px solid #1e1e1e;
+  color: #161624;
+  border: 2px solid #161624;
   cursor: pointer;
   -webkit-box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
           box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
@@ -493,7 +491,7 @@ header .header-nav-logo:hover {
     padding: 6px 32px;
   }
   .projects-button {
-    padding: 14px 108px;
+    padding: 14px 38px;
   }
 }
 
@@ -592,7 +590,7 @@ header .header-nav-logo:hover {
 
 .section-hero-description .hero-welcome {
   font-family: "Space Grotesk", sans-serif;
-  color: #1e1e1e;
+  color: #161624;
 }
 
 .section-hero-description__name {
@@ -609,7 +607,8 @@ header .header-nav-logo:hover {
 .section-hero-description__job {
   font-family: "Space Grotesk", sans-serif;
   font-size: 32px;
-  color: #1e1e1e;
+  font-weight: 600;
+  color: #161624;
   text-align: center;
   letter-spacing: 0.2em;
 }
@@ -626,8 +625,17 @@ header .header-nav-logo:hover {
   .section-hero-container {
     margin: 20px 15px;
   }
+  .section-hero-description__name {
+    font-size: 90px;
+  }
   .section-hero-img {
     margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .section-hero-description__name {
+    font-size: 70px;
   }
 }
 
@@ -647,7 +655,7 @@ header .header-nav-logo:hover {
 
 .section-aboutme-container .section-aboutme-description {
   font-family: "Space Grotesk", sans-serif;
-  color: #828282;
+  color: #44444F;
   text-align: center;
   white-space: normal;
   word-break: normal;
@@ -676,10 +684,10 @@ header .header-nav-logo:hover {
 
 .section-aboutme-container .section-aboutme-btn-container .section-aboutme-button {
   background-color: transparent;
-  color: #1e1e1e;
-  border: 3px solid #1e1e1e;
+  color: #161624;
+  border: 2px solid #161624;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   font-family: "Space Grotesk", sans-serif;
@@ -694,8 +702,8 @@ header .header-nav-logo:hover {
 
 .section-aboutme-container .section-aboutme-btn-container .section-aboutme-button:hover {
   background: transparent;
-  color: #1e1e1e;
-  border: 3px solid #1e1e1e;
+  color: #161624;
+  border: 2px solid #161624;
   cursor: pointer;
   -webkit-box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
           box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
@@ -708,10 +716,10 @@ header .header-nav-logo:hover {
   }
   /*--------------About---------------*/
   .section-aboutme-container {
-    margin: 120px 14px 120px 14px;
+    margin: 120px 34px;
   }
   .section-aboutme-button {
-    padding: 12px 138px;
+    padding: 12px 38px;
     letter-spacing: 0.12em;
   }
 }
@@ -768,9 +776,9 @@ header .header-nav-logo:hover {
 }
 
 .skills-container .skills-container-main {
-  background-color: #1e1e1e;
+  background-color: #161624;
   width: 1200px;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 28px 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -783,9 +791,10 @@ header .header-nav-logo:hover {
 }
 
 .skills-container .skills-container-main .skills-container-title h2 {
-  color: #ffffff;
+  color: #FEFEFE;
   padding-top: 24px;
   padding-bottom: 24px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .skills-container .skills-container-main .skills-container_grid {
@@ -815,7 +824,7 @@ header .header-nav-logo:hover {
 }
 
 .skills-container .skills-container-main .skills-container_grid .skills-content h3 {
-  color: #ffffff;
+  color: #FEFEFE;
   font-weight: 500;
   font-size: 22px;
   text-align: center;
@@ -907,13 +916,14 @@ header .header-nav-logo:hover {
 /*--------------CONTACT---------------*/
 .contact {
   height: 350px;
-  background-color: #f6f6f6;
+  background-color: #EBEBEF;
 }
 
 .contact h2 {
-  color: #1e1e1e;
+  color: #161624;
   padding-top: 50px;
   padding-bottom: 30px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .contact .contact-container {
@@ -931,7 +941,7 @@ header .header-nav-logo:hover {
 }
 
 .contact .contact-container .contact-item i {
-  color: #1e1e1e;
+  color: #161624;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -996,24 +1006,24 @@ header .header-nav-logo:hover {
 footer {
   width: 100%;
   height: 36px;
-  background-color: #1e1e1e;
+  background-color: #161624;
 }
 
 footer p {
   font-family: "Space Grotesk", sans-serif;
-  color: #f6f6f6;
+  color: #EBEBEF;
   font-size: 13px;
   text-align: center;
   padding-top: 10px;
 }
 
 ::-moz-selection {
-  color: #ffffff;
+  color: #FEFEFE;
   background: #5552ff;
 }
 
 ::selection {
-  color: #ffffff;
+  color: #FEFEFE;
   background: #5552ff;
 }
 
@@ -1027,7 +1037,7 @@ html {
 }
 
 h2 {
-  color: #1e1e1e;
+  color: #161624;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -1042,12 +1052,12 @@ h2 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f6f6f6;
+  background: #EBEBEF;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #828282;
+  background: #44444F;
 }
 
 /* Handle on hover */

@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 /*--------------Projects---------------*/
 .projects-section h2 {
-  color: #1e1e1e;
+  color: #161624;
   padding-top: 50px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .projects-section .projects-container {
@@ -13,10 +14,10 @@
 }
 
 .projects-section .projects-container .project-container-item {
-  border: 0.5px solid #dddddd;
+  border: 3px solid rgba(240, 240, 240, 0.4);
   -ms-grid-column-align: center;
       justify-self: center;
-  border-radius: 4px;
+  border-radius: 6px;
   display: -ms-grid;
   display: grid;
   -webkit-transition: all ease-in-out 0.2s;
@@ -48,7 +49,7 @@
 }
 
 .projects-section .projects-container .project-container-item p {
-  color: #828282;
+  color: #44444F;
   font-family: "Space Grotesk", sans-serif;
   font-size: 14px;
   padding: 20px 40px;
@@ -80,10 +81,10 @@
   font-family: "Space Grotesk", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  background: #5552ff;
-  border: 2px solid transparent;
-  border-radius: 4px;
-  color: #ffffff;
+  background: #FEFEFE;
+  border: 2px solid #5552ff;
+  border-radius: 6px;
+  color: #5552ff;
   display: inline-block;
   height: 26px;
   line-height: 26px;
@@ -95,8 +96,8 @@
 }
 
 .projects-section .projects-container .project-container-item .btn-container .projects-btn_blue:hover {
-  background-color: #f6f6f6;
-  color: #5552ff;
+  background-color: #5552ff;
+  color: #FEFEFE;
   border: 2px solid #5552ff;
 }
 
@@ -112,10 +113,10 @@
   font-family: "Space Grotesk", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  background: #1e1e1e;
-  border: 2px solid transparent;
-  border-radius: 4px;
-  color: #ffffff;
+  background: #FEFEFE;
+  border: 2px solid #161624;
+  border-radius: 6px;
+  color: #161624;
   display: inline-block;
   height: 26px;
   line-height: 26px;
@@ -127,9 +128,9 @@
 }
 
 .projects-section .projects-container .project-container-item .btn-container .projects-btn_dark:hover {
-  background-color: #f6f6f6;
-  color: #1e1e1e;
-  border: 2px solid #1e1e1e;
+  background-color: #161624;
+  color: #FEFEFE;
+  border: 2px solid #161624;
 }
 
 .projects-section .projects-container .project-container-item .btn-container .projects-btn_dark img {
@@ -141,8 +142,6 @@
 }
 
 .projects-section .projects-container .project-container-item:hover {
-  -webkit-box-shadow: 0px 1px 40px rgba(99, 99, 100, 0.18);
-          box-shadow: 0px 1px 40px rgba(99, 99, 100, 0.18);
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
 }
@@ -163,10 +162,10 @@
 
 .projects-section .projects-container-btn .projects-button {
   background-color: transparent;
-  color: #1e1e1e;
-  border: 3px solid #1e1e1e;
+  color: #161624;
+  border: 2px solid #161624;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   font-family: "Space Grotesk", sans-serif;
@@ -182,8 +181,8 @@
 
 .projects-section .projects-container-btn .projects-button:hover {
   background: transparent;
-  color: #1e1e1e;
-  border: 3px solid #1e1e1e;
+  color: #161624;
+  border: 2px solid #161624;
   cursor: pointer;
   -webkit-box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
           box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
@@ -208,7 +207,7 @@
     padding: 6px 32px;
   }
   .projects-button {
-    padding: 14px 108px;
+    padding: 14px 38px;
   }
 }
 

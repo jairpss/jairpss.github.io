@@ -29,6 +29,7 @@
   &__job {
     font-family: $main-font;
     font-size: 32px;
+    font-weight: 600;
     color: $color-dark;
     text-align: center;
     letter-spacing: 0.2em;
@@ -46,7 +47,17 @@
     margin: 20px 15px;
   }
 
+  .section-hero-description__name{
+    font-size: 90px;
+  }
+  
   .section-hero-img {
     margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .section-hero-description__name{
+    font-size: 70px;
   }
 }

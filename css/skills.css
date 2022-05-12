@@ -11,9 +11,9 @@
 }
 
 .skills-container .skills-container-main {
-  background-color: #1e1e1e;
+  background-color: #161624;
   width: 1200px;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 28px 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,9 +26,10 @@
 }
 
 .skills-container .skills-container-main .skills-container-title h2 {
-  color: #ffffff;
+  color: #FEFEFE;
   padding-top: 24px;
   padding-bottom: 24px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .skills-container .skills-container-main .skills-container_grid {
@@ -58,7 +59,7 @@
 }
 
 .skills-container .skills-container-main .skills-container_grid .skills-content h3 {
-  color: #ffffff;
+  color: #FEFEFE;
   font-weight: 500;
   font-size: 22px;
   text-align: center;

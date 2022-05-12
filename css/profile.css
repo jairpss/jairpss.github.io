@@ -16,7 +16,7 @@
 
 .section-aboutme-container .section-aboutme-description {
   font-family: "Space Grotesk", sans-serif;
-  color: #828282;
+  color: #44444F;
   text-align: center;
   white-space: normal;
   word-break: normal;
@@ -45,10 +45,10 @@
 
 .section-aboutme-container .section-aboutme-btn-container .section-aboutme-button {
   background-color: transparent;
-  color: #1e1e1e;
-  border: 3px solid #1e1e1e;
+  color: #161624;
+  border: 2px solid #161624;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   font-family: "Space Grotesk", sans-serif;
@@ -63,8 +63,8 @@
 
 .section-aboutme-container .section-aboutme-btn-container .section-aboutme-button:hover {
   background: transparent;
-  color: #1e1e1e;
-  border: 3px solid #1e1e1e;
+  color: #161624;
+  border: 2px solid #161624;
   cursor: pointer;
   -webkit-box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
           box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
@@ -77,10 +77,10 @@
   }
   /*--------------About---------------*/
   .section-aboutme-container {
-    margin: 120px 14px 120px 14px;
+    margin: 120px 34px;
   }
   .section-aboutme-button {
-    padding: 12px 138px;
+    padding: 12px 38px;
     letter-spacing: 0.12em;
   }
 }

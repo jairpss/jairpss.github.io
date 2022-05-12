@@ -18,7 +18,7 @@
 
 .section-hero-description .hero-welcome {
   font-family: "Space Grotesk", sans-serif;
-  color: #1e1e1e;
+  color: #161624;
 }
 
 .section-hero-description__name {
@@ -35,7 +35,8 @@
 .section-hero-description__job {
   font-family: "Space Grotesk", sans-serif;
   font-size: 32px;
-  color: #1e1e1e;
+  font-weight: 600;
+  color: #161624;
   text-align: center;
   letter-spacing: 0.2em;
 }
@@ -52,8 +53,17 @@
   .section-hero-container {
     margin: 20px 15px;
   }
+  .section-hero-description__name {
+    font-size: 90px;
+  }
   .section-hero-img {
     margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .section-hero-description__name {
+    font-size: 70px;
   }
 }
 /*# sourceMappingURL=hero.css.map */
