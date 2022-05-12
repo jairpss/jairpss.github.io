@@ -40,7 +40,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 80px;
 }
 
 .section-aboutme-container .section-aboutme-btn-container .section-aboutme-button {
@@ -77,7 +76,10 @@
   }
   /*--------------About---------------*/
   .section-aboutme-container {
-    margin: 120px 34px;
+    margin: 40px 34px;
+  }
+  .section-aboutme-btn-container {
+    margin-top: 40px;
   }
   .section-aboutme-button {
     padding: 12px 38px;
@@ -92,7 +94,10 @@
     font-size: 18px;
   }
   .section-aboutme-container {
-    margin: 120px 60px 120px 60px;
+    margin: 80px 60px 120px 60px;
+  }
+  .section-aboutme-btn-container {
+    margin-top: 80px;
   }
   .section-aboutme-button {
     padding: 12px 34px;
@@ -104,6 +109,9 @@
   .section-aboutme-description {
     line-height: 2.3rem;
     font-size: 20px;
+  }
+  .section-aboutme-btn-container {
+    margin-top: 80px;
   }
   .section-aboutme-button {
     padding: 12px 34px;
@@ -118,7 +126,10 @@
     font-size: 20px;
   }
   .section-aboutme-container {
-    margin: 120px 100px 120px 100px;
+    margin: 100px 100px 120px 100px;
+  }
+  .section-aboutme-btn-container {
+    margin-top: 80px;
   }
   .section-aboutme-button {
     padding: 12px 34px;
