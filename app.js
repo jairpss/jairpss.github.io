@@ -11,3 +11,9 @@ const navSlide = () => {
 }
 
 navSlide();
+
+const navMenu = document.querySelector("#burger")
+
+navMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+})

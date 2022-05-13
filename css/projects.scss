@@ -13,11 +13,14 @@
     display: grid;
 
     .project-container-item {
-      border: 3px solid rgba(240, 240, 240, 0.4);
+      // border: 3px solid transparent;
+      background-color: #fff;
       justify-self: center;
       border-radius: 6px;
       display: grid;
       transition: all ease-in-out 0.2s;
+      box-shadow:  0px 4px 20px rgba(211, 211, 211, 0.2);
+
 
       .project-container-img {
         justify-self: center;
@@ -56,7 +59,7 @@
           list-style: none;
           margin: 0;
           overflow: hidden;
-          justify-self: center;
+          justify-self: right;
           justify-items: center;
         }
 
@@ -71,10 +74,10 @@
           font-weight: 500;
           background: $color-white;
           border: 2px solid $color-blue;
-          border-radius: 6px;
+          border-radius: 15px;
           color: $color-blue;
           display: inline-block;
-          height: 26px;
+          padding: 1px 6px;
           line-height: 26px;
           position: relative;
           margin: 0px 10px;
@@ -100,10 +103,10 @@
           font-weight: 500;
           background: $color-white;
           border: 2px solid $color-dark;
-          border-radius: 6px;
+          border-radius: 15px;
           color: $color-dark;
           display: inline-block;
-          height: 26px;
+          padding: 1px 6px;
           line-height: 26px;
           position: relative;
           margin: 0px 10px;
@@ -139,8 +142,8 @@
     margin-bottom: 70px;
 
     .projects-button {
-      background-color: transparent;
-      color: $color-dark;
+      background-color: $color-dark;
+      color: $color-white;
       border: 2px solid $color-dark;
       text-decoration: none;
       border-radius: 6px;
@@ -155,11 +158,11 @@
       outline: none;
 
       &:hover {
-        background: transparent;
+        background: $color-white;
         color: $color-dark;
         border: 2px solid $color-dark;
         cursor: pointer;
-        box-shadow:  -8px 4px 20px rgba(85, 82, 255, 0.3);
+        box-shadow:  0px 4px 20px rgba(193, 193, 193, 0.5);
         // transform: translateY(-4px);
       }
     }

@@ -14,7 +14,7 @@
 }
 
 .projects-section .projects-container .project-container-item {
-  border: 3px solid rgba(240, 240, 240, 0.4);
+  background-color: #fff;
   -ms-grid-column-align: center;
       justify-self: center;
   border-radius: 6px;
@@ -22,6 +22,8 @@
   display: grid;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
+  -webkit-box-shadow: 0px 4px 20px rgba(211, 211, 211, 0.2);
+          box-shadow: 0px 4px 20px rgba(211, 211, 211, 0.2);
 }
 
 .projects-section .projects-container .project-container-item .project-container-img {
@@ -68,7 +70,7 @@
   list-style: none;
   margin: 0;
   overflow: hidden;
-  justify-self: center;
+  justify-self: right;
   justify-items: center;
 }
 
@@ -83,10 +85,10 @@
   font-weight: 500;
   background: #FEFEFE;
   border: 2px solid #5552ff;
-  border-radius: 6px;
+  border-radius: 15px;
   color: #5552ff;
   display: inline-block;
-  height: 26px;
+  padding: 1px 6px;
   line-height: 26px;
   position: relative;
   margin: 0px 10px;
@@ -115,10 +117,10 @@
   font-weight: 500;
   background: #FEFEFE;
   border: 2px solid #161624;
-  border-radius: 6px;
+  border-radius: 15px;
   color: #161624;
   display: inline-block;
-  height: 26px;
+  padding: 1px 6px;
   line-height: 26px;
   position: relative;
   margin: 0px 10px;
@@ -161,8 +163,8 @@
 }
 
 .projects-section .projects-container-btn .projects-button {
-  background-color: transparent;
-  color: #161624;
+  background-color: #161624;
+  color: #FEFEFE;
   border: 2px solid #161624;
   text-decoration: none;
   border-radius: 6px;
@@ -180,12 +182,12 @@
 }
 
 .projects-section .projects-container-btn .projects-button:hover {
-  background: transparent;
+  background: #FEFEFE;
   color: #161624;
   border: 2px solid #161624;
   cursor: pointer;
-  -webkit-box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
-          box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
+  -webkit-box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.5);
+          box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.5);
 }
 
 @media screen and (max-width: 480px) {

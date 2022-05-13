@@ -56,7 +56,7 @@ header li {
 }
 
 header .header-nav-link {
-  color: #161624;
+  color: #44444F;
   text-decoration: none;
   position: relative;
   font-family: "Space Grotesk", sans-serif;
@@ -70,12 +70,12 @@ header .header-nav-link {
 }
 
 header .header-nav-link:hover, header .header-nav-link:focus {
-  font-weight: 700;
+  color: #161624;
 }
 
 header .header-nav-btn {
-  background-color: transparent;
-  color: #161624;
+  background-color: #161624;
+  color: #FEFEFE;
   border: 2px solid #161624;
   padding: 8px 20px;
   text-decoration: none;
@@ -91,12 +91,12 @@ header .header-nav-btn {
 }
 
 header .header-nav-btn:hover {
-  background: transparent;
+  background: #FEFEFE;
   color: #161624;
   border: 2px solid #161624;
   cursor: pointer;
-  -webkit-box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.4);
-          box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.4);
+  -webkit-box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.5);
+          box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.5);
 }
 
 header .header-nav-logo:hover {
@@ -159,12 +159,41 @@ header .header-nav-logo:hover {
   .header-nav {
     padding: 20px 32px;
   }
-  .burger {
+  #burger > span {
     display: block;
-    font-size: 28px;
+    width: 28px;
+    height: 3px;
+    border-radius: 100px;
+    background-color: #161624;
   }
-  .burger:hover {
-    cursor: pointer;
+  #burger > span:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  #burger, #burger > span {
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  #burguer.active {
+    -webkit-transition-delay: 0.8s;
+            transition-delay: 0.8s;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #burguer.active > span:nth-child(2) {
+    width: 0;
+  }
+  #burguer.active > span:nth-child(1),
+  #burguer.active > span:nth-child(3) {
+    -webkit-transition-delay: .4s;
+            transition-delay: .4s;
+  }
+  #burguer.active > span:nth-child(1) {
+    -webkit-transform: translateY(9px);
+            transform: translateY(9px);
+  }
+  #burguer.active > span:nth-child(3) {
+    -webkit-transform: translateY(-9px) rotate(90deg);
+            transform: translateY(-9px) rotate(90deg);
   }
   .header-nav-links {
     position: absolute;
@@ -298,7 +327,7 @@ header .header-nav-logo:hover {
 }
 
 .projects-section .projects-container .project-container-item {
-  border: 3px solid rgba(240, 240, 240, 0.4);
+  background-color: #fff;
   -ms-grid-column-align: center;
       justify-self: center;
   border-radius: 6px;
@@ -306,6 +335,8 @@ header .header-nav-logo:hover {
   display: grid;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
+  -webkit-box-shadow: 0px 4px 20px rgba(211, 211, 211, 0.2);
+          box-shadow: 0px 4px 20px rgba(211, 211, 211, 0.2);
 }
 
 .projects-section .projects-container .project-container-item .project-container-img {
@@ -352,7 +383,7 @@ header .header-nav-logo:hover {
   list-style: none;
   margin: 0;
   overflow: hidden;
-  justify-self: center;
+  justify-self: right;
   justify-items: center;
 }
 
@@ -367,10 +398,10 @@ header .header-nav-logo:hover {
   font-weight: 500;
   background: #FEFEFE;
   border: 2px solid #5552ff;
-  border-radius: 6px;
+  border-radius: 15px;
   color: #5552ff;
   display: inline-block;
-  height: 26px;
+  padding: 1px 6px;
   line-height: 26px;
   position: relative;
   margin: 0px 10px;
@@ -399,10 +430,10 @@ header .header-nav-logo:hover {
   font-weight: 500;
   background: #FEFEFE;
   border: 2px solid #161624;
-  border-radius: 6px;
+  border-radius: 15px;
   color: #161624;
   display: inline-block;
-  height: 26px;
+  padding: 1px 6px;
   line-height: 26px;
   position: relative;
   margin: 0px 10px;
@@ -445,8 +476,8 @@ header .header-nav-logo:hover {
 }
 
 .projects-section .projects-container-btn .projects-button {
-  background-color: transparent;
-  color: #161624;
+  background-color: #161624;
+  color: #FEFEFE;
   border: 2px solid #161624;
   text-decoration: none;
   border-radius: 6px;
@@ -464,12 +495,12 @@ header .header-nav-logo:hover {
 }
 
 .projects-section .projects-container-btn .projects-button:hover {
-  background: transparent;
+  background: #FEFEFE;
   color: #161624;
   border: 2px solid #161624;
   cursor: pointer;
-  -webkit-box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
-          box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
+  -webkit-box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.5);
+          box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.5);
 }
 
 @media screen and (max-width: 480px) {
@@ -682,8 +713,8 @@ header .header-nav-logo:hover {
 }
 
 .section-aboutme-container .section-aboutme-btn-container .section-aboutme-button {
-  background-color: transparent;
-  color: #161624;
+  background-color: #161624;
+  color: #FEFEFE;
   border: 2px solid #161624;
   text-decoration: none;
   border-radius: 6px;
@@ -700,12 +731,12 @@ header .header-nav-logo:hover {
 }
 
 .section-aboutme-container .section-aboutme-btn-container .section-aboutme-button:hover {
-  background: transparent;
+  background: #FEFEFE;
   color: #161624;
   border: 2px solid #161624;
   cursor: pointer;
-  -webkit-box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
-          box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
+  -webkit-box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.5);
+          box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.5);
 }
 
 @media screen and (max-width: 480px) {
@@ -1047,6 +1078,10 @@ html {
   padding: 0;
 }
 
+body {
+  background-color: #FEFEFE;
+}
+
 h2 {
   color: #161624;
   font-family: "Space Grotesk", sans-serif;
@@ -1068,7 +1103,7 @@ h2 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #44444F;
+  background: #A6A6A6;
 }
 
 /* Handle on hover */

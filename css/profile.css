@@ -43,8 +43,8 @@
 }
 
 .section-aboutme-container .section-aboutme-btn-container .section-aboutme-button {
-  background-color: transparent;
-  color: #161624;
+  background-color: #161624;
+  color: #FEFEFE;
   border: 2px solid #161624;
   text-decoration: none;
   border-radius: 6px;
@@ -61,12 +61,12 @@
 }
 
 .section-aboutme-container .section-aboutme-btn-container .section-aboutme-button:hover {
-  background: transparent;
+  background: #FEFEFE;
   color: #161624;
   border: 2px solid #161624;
   cursor: pointer;
-  -webkit-box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
-          box-shadow: -8px 4px 20px rgba(85, 82, 255, 0.3);
+  -webkit-box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.5);
+          box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.5);
 }
 
 @media screen and (max-width: 480px) {
