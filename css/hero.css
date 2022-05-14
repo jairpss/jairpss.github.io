@@ -24,6 +24,7 @@
 .section-hero-description__name {
   font-family: "Space Grotesk", sans-serif;
   font-size: 110px;
+  font-weight: 700;
   text-align: center;
   background: #5552FF;
   background: -webkit-gradient(linear, left top, right top, from(#5552FF), to(#8525CF));

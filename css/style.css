@@ -307,8 +307,13 @@ header .header-nav-logo:hover {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  .header-nav-btn {
+  .header-nav-links li .header-nav-link {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .header-nav-links .header-nav-btn {
     margin-left: 20px;
+    font-size: 14px;
   }
   .section-aboutme-container {
     margin: 120px 100px 120px 100px;
@@ -347,8 +352,13 @@ header .header-nav-logo:hover {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  .header-nav-btn {
+  .header-nav-links li .header-nav-link {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .header-nav-links .header-nav-btn {
     margin-left: 20px;
+    font-size: 14px;
   }
 }
 
@@ -666,6 +676,7 @@ header .header-nav-logo:hover {
 .section-hero-description__name {
   font-family: "Space Grotesk", sans-serif;
   font-size: 110px;
+  font-weight: 700;
   text-align: center;
   background: #5552FF;
   background: -webkit-gradient(linear, left top, right top, from(#5552FF), to(#8525CF));

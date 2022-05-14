@@ -277,11 +277,16 @@ header {
     li {
       margin-top: 0px;
       margin-bottom: 0px;
-    }
-  }
 
-  .header-nav-btn {
-    margin-left: 20px;
+      .header-nav-link {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+    .header-nav-btn {
+      margin-left: 20px;
+      font-size: 14px;
+    }
   }
 
   .section-aboutme-container {
@@ -313,10 +318,15 @@ header {
     li {
       margin-top: 0px;
       margin-bottom: 0px;
-    }
-  }
 
-  .header-nav-btn {
-    margin-left: 20px;
+      .header-nav-link {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+    .header-nav-btn {
+      margin-left: 20px;
+      font-size: 14px;
+    }
   }
 }

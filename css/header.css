@@ -293,8 +293,13 @@ header .header-nav-logo:hover {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  .header-nav-btn {
+  .header-nav-links li .header-nav-link {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .header-nav-links .header-nav-btn {
     margin-left: 20px;
+    font-size: 14px;
   }
   .section-aboutme-container {
     margin: 120px 100px 120px 100px;
@@ -333,8 +338,13 @@ header .header-nav-logo:hover {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  .header-nav-btn {
+  .header-nav-links li .header-nav-link {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .header-nav-links .header-nav-btn {
     margin-left: 20px;
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=header.css.map */
