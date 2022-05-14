@@ -107,12 +107,41 @@ header .header-nav-logo:hover {
   .header-nav {
     padding: 20px 32px;
   }
-  .burger {
+  #burger > span {
     display: block;
-    font-size: 28px;
+    width: 28px;
+    height: 3px;
+    border-radius: 100px;
+    background-color: #161624;
   }
-  .burger:hover {
-    cursor: pointer;
+  #burger > span:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  #burger, #burger > span {
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  #burguer.active {
+    -webkit-transition-delay: 0.8s;
+            transition-delay: 0.8s;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #burguer.active > span:nth-child(2) {
+    width: 0;
+  }
+  #burguer.active > span:nth-child(1),
+  #burguer.active > span:nth-child(3) {
+    -webkit-transition-delay: .4s;
+            transition-delay: .4s;
+  }
+  #burguer.active > span:nth-child(1) {
+    -webkit-transform: translateY(9px);
+            transform: translateY(9px);
+  }
+  #burguer.active > span:nth-child(3) {
+    -webkit-transform: translateY(-9px) rotate(90deg);
+            transform: translateY(-9px) rotate(90deg);
   }
   .header-nav-links {
     position: absolute;
@@ -141,7 +170,15 @@ header .header-nav-logo:hover {
   }
   .header-nav-links li {
     margin-top: 70px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
+  }
+  .header-nav-links li .header-nav-link {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .header-nav-links .header-nav-btn {
+    margin-left: 0px;
+    font-size: 18px;
   }
   .nav-active {
     -webkit-transform: translateX(0%);
@@ -149,9 +186,6 @@ header .header-nav-logo:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .header-nav-btn {
-    margin-left: 0px;
   }
 }
 
@@ -222,7 +256,15 @@ header .header-nav-logo:hover {
   }
   .header-nav-links li {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+  }
+  .header-nav-links li .header-nav-link {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .header-nav-links .header-nav-btn {
+    margin-left: 0px;
+    font-size: 18px;
   }
   .nav-active {
     -webkit-transform: translateX(0%);
@@ -230,9 +272,6 @@ header .header-nav-logo:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .header-nav-btn {
-    margin-left: 0px;
   }
 }
 
@@ -402,9 +441,9 @@ header .header-nav-logo:hover {
   color: #5552ff;
   display: inline-block;
   padding: 1px 6px;
-  line-height: 26px;
+  line-height: 24px;
   position: relative;
-  margin: 0px 10px;
+  margin: 0px 5px;
   text-decoration: none;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -434,9 +473,9 @@ header .header-nav-logo:hover {
   color: #161624;
   display: inline-block;
   padding: 1px 6px;
-  line-height: 26px;
+  line-height: 24px;
   position: relative;
-  margin: 0px 10px;
+  margin: 0px 5px;
   text-decoration: none;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -687,7 +726,6 @@ header .header-nav-logo:hover {
 .section-aboutme-container .section-aboutme-description {
   font-family: "Space Grotesk", sans-serif;
   color: #44444F;
-  text-align: center;
   white-space: normal;
   word-break: normal;
   font-size: 16px;
@@ -743,10 +781,14 @@ header .header-nav-logo:hover {
   .section-aboutme-description {
     line-height: 2rem;
     font-size: 16px;
+    text-align: left;
   }
   /*--------------About---------------*/
   .section-aboutme-container {
     margin: 40px 34px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .section-aboutme-btn-container {
     margin-top: 40px;
@@ -762,9 +804,13 @@ header .header-nav-logo:hover {
   .section-aboutme-description {
     line-height: 2.3rem;
     font-size: 18px;
+    text-align: left;
   }
   .section-aboutme-container {
     margin: 80px 60px 120px 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .section-aboutme-btn-container {
     margin-top: 80px;
@@ -779,6 +825,7 @@ header .header-nav-logo:hover {
   .section-aboutme-description {
     line-height: 2.3rem;
     font-size: 20px;
+    text-align: center;
   }
   .section-aboutme-btn-container {
     margin-top: 80px;
@@ -794,9 +841,13 @@ header .header-nav-logo:hover {
   .section-aboutme-description {
     line-height: 2.3rem;
     font-size: 20px;
+    text-align: center;
   }
   .section-aboutme-container {
     margin: 100px 100px 120px 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .section-aboutme-btn-container {
     margin-top: 80px;

@@ -9,7 +9,7 @@
   .section-aboutme-description {
     font-family: $main-font;
     color: $color-gray-dark;
-    text-align: center;
+    
     white-space: normal;
     word-break: normal;
     font-size: 16px;
@@ -58,10 +58,12 @@
   .section-aboutme-description {
     line-height: 2rem;
     font-size: 16px;
+    text-align: left;
   }
   /*--------------About---------------*/
   .section-aboutme-container {
     margin: 40px 34px;
+    align-items: center;
   }
   .section-aboutme-btn-container {
     margin-top: 40px;
@@ -77,9 +79,11 @@
   .section-aboutme-description {
     line-height: 2.3rem;
     font-size: 18px;
+    text-align: left;
   }
   .section-aboutme-container {
     margin: 80px 60px 120px 60px;
+    align-items: center;
   }
 
   .section-aboutme-btn-container {
@@ -96,6 +100,7 @@
   .section-aboutme-description {
     line-height: 2.3rem;
     font-size: 20px;
+    text-align: center;
   }
   .section-aboutme-btn-container {
     margin-top: 80px;
@@ -112,10 +117,12 @@
   .section-aboutme-description {
     line-height: 2.3rem;
     font-size: 20px;
+    text-align: center;
   }
 
   .section-aboutme-container {
     margin: 100px 100px 120px 100px;
+    align-items: center;
   }
 
   .section-aboutme-btn-container {

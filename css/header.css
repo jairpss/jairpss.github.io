@@ -93,12 +93,41 @@ header .header-nav-logo:hover {
   .header-nav {
     padding: 20px 32px;
   }
-  .burger {
+  #burger > span {
     display: block;
-    font-size: 28px;
+    width: 28px;
+    height: 3px;
+    border-radius: 100px;
+    background-color: #161624;
   }
-  .burger:hover {
-    cursor: pointer;
+  #burger > span:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  #burger, #burger > span {
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  #burguer.active {
+    -webkit-transition-delay: 0.8s;
+            transition-delay: 0.8s;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #burguer.active > span:nth-child(2) {
+    width: 0;
+  }
+  #burguer.active > span:nth-child(1),
+  #burguer.active > span:nth-child(3) {
+    -webkit-transition-delay: .4s;
+            transition-delay: .4s;
+  }
+  #burguer.active > span:nth-child(1) {
+    -webkit-transform: translateY(9px);
+            transform: translateY(9px);
+  }
+  #burguer.active > span:nth-child(3) {
+    -webkit-transform: translateY(-9px) rotate(90deg);
+            transform: translateY(-9px) rotate(90deg);
   }
   .header-nav-links {
     position: absolute;
@@ -127,7 +156,15 @@ header .header-nav-logo:hover {
   }
   .header-nav-links li {
     margin-top: 70px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
+  }
+  .header-nav-links li .header-nav-link {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .header-nav-links .header-nav-btn {
+    margin-left: 0px;
+    font-size: 18px;
   }
   .nav-active {
     -webkit-transform: translateX(0%);
@@ -135,9 +172,6 @@ header .header-nav-logo:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .header-nav-btn {
-    margin-left: 0px;
   }
 }
 
@@ -208,7 +242,15 @@ header .header-nav-logo:hover {
   }
   .header-nav-links li {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+  }
+  .header-nav-links li .header-nav-link {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .header-nav-links .header-nav-btn {
+    margin-left: 0px;
+    font-size: 18px;
   }
   .nav-active {
     -webkit-transform: translateX(0%);
@@ -216,9 +258,6 @@ header .header-nav-logo:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .header-nav-btn {
-    margin-left: 0px;
   }
 }
 
