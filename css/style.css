@@ -176,6 +176,7 @@ header .header-nav-logo:hover {
   .header-nav-links li .header-nav-link {
     font-size: 18px;
     font-weight: 600;
+    opacity: 1;
   }
   .header-nav-links .header-nav-btn {
     margin-left: 0px;
@@ -262,6 +263,7 @@ header .header-nav-logo:hover {
   .header-nav-links li .header-nav-link {
     font-size: 18px;
     font-weight: 600;
+    opacity: 1;
   }
   .header-nav-links .header-nav-btn {
     margin-left: 0px;
