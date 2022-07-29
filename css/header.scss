@@ -92,6 +92,10 @@ header {
     cursor: pointer;
   }
 
+  .burger:hover{
+    cursor: pointer;
+  }
+
   #burger > span:not(:last-child) {
     margin-bottom: 5px;
   }

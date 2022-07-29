@@ -59,6 +59,7 @@ header .header-nav-link {
 header .header-nav-link:hover, header .header-nav-link:focus {
   color: #161624;
   opacity: 1;
+  font-weight: 700;
 }
 
 header .header-nav-btn {
@@ -101,6 +102,9 @@ header .header-nav-logo:hover {
     height: 3px;
     border-radius: 100px;
     background-color: #161624;
+    cursor: pointer;
+  }
+  .burger:hover {
     cursor: pointer;
   }
   #burger > span:not(:last-child) {
