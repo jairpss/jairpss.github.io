@@ -44,25 +44,26 @@
 .section-aboutme-container .section-aboutme-btn-container .section-aboutme-button {
   background-color: #161624;
   color: #FEFEFE;
-  border: 2px solid #161624;
+  border: 3px solid #161624;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 16px;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   outline: none;
+  padding: 18px 44px;
 }
 
 .section-aboutme-container .section-aboutme-btn-container .section-aboutme-button:hover {
   background: #FEFEFE;
   color: #161624;
-  border: 2px solid #161624;
+  border: 3px solid #161624;
   cursor: pointer;
   -webkit-box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.5);
           box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.5);
