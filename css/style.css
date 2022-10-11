@@ -889,7 +889,7 @@ header .header-nav-logo:hover {
 .skills-container .skills-container-main {
   background-color: #161624;
   width: 1200px;
-  border-radius: 6px;
+  border-radius: 40px;
   padding: 28px 32px;
   display: -webkit-box;
   display: -ms-flexbox;
