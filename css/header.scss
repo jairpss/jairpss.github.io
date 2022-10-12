@@ -70,8 +70,6 @@ header {
         border: 2px solid $color-dark;
         cursor: pointer;
         box-shadow:  0px 4px 20px rgba(193, 193, 193, 0.5);
-        // box-shadow:  -8px 4px 20px rgba(85, 82, 255, 0.4);
-      // transform: translateY(-4px);
     }
   }
   /*-----------Logo--------------*/
@@ -80,46 +78,70 @@ header {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 920px) {
   .header-nav {
     padding: 20px 32px;
   }
-  #burger > span {
+
+  .burger{
+    display: flex;
+    flex-direction: column;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: 0;
+    gap: .5rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  #burger > div{
     display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 100px;
     background-color: $color-dark;
-    cursor: pointer;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    transition: all .5s;
   }
+  
+  // #burger > span {
+  //   display: block;
+  //   width: 28px;
+  //   height: 3px;
+  //   border-radius: 100px;
+  //   background-color: $color-dark;
+  //   cursor: pointer;
+  // }
 
-  #burger:hover{
-    cursor: pointer;
-  }
+  // #burger:hover{
+  //   cursor: pointer;
+  // }
 
-  #burger > span:not(:last-child) {
-    margin-bottom: 5px;
-  }
-  #burger, #burger > span {
-    transition: all .4s ease-in-out;
-  }
-  #burguer .active{
-    transition-delay: 0.8s;
-    transform: rotate(45deg);
-  }
-  #burguer .active > span:nth-child(2){
-    width: 0;
-  }
-  #burguer .active > span:nth-child(1),
-  #burguer .active > span:nth-child(3){
-    transition-delay: .4s;
-  }
-  #burguer .active > span:nth-child(1){
-    transform: translateY(9px);
-  }
-  #burguer .active > span:nth-child(3){
-    transform: translateY(-9px) rotate(90deg);
-  }
+  // #burger > span:not(:last-child) {
+  //   margin-bottom: 5px;
+  // }
+  // #burger, #burger > span {
+  //   transition: all .4s ease-in-out;
+  // }
+  // #burguer .active{
+  //   transition-delay: 0.8s;
+  //   transform: rotate(45deg);
+  // }
+  // #burguer .active > span:nth-child(2){
+  //   width: 0;
+  // }
+  // #burguer .active > span:nth-child(1),
+  // #burguer .active > span:nth-child(3){
+  //   transition-delay: .4s;
+  // }
+  // #burguer .active > span:nth-child(1){
+  //   transform: translateY(9px);
+  // }
+  // #burguer .active > span:nth-child(3){
+  //   transform: translateY(-9px) rotate(90deg);
+  // }
 
   .header-nav-links {
     position: absolute;

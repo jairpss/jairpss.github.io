@@ -93,49 +93,35 @@ header .header-nav-logo:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 920px) {
   .header-nav {
     padding: 20px 32px;
   }
-  #burger > span {
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: 0;
+    gap: .5rem;
+  }
+  .burger:hover {
+    cursor: pointer;
+  }
+  #burger > div {
     display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 100px;
     background-color: #161624;
-    cursor: pointer;
-  }
-  #burger:hover {
-    cursor: pointer;
-  }
-  #burger > span:not(:last-child) {
-    margin-bottom: 5px;
-  }
-  #burger, #burger > span {
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-  }
-  #burguer .active {
-    -webkit-transition-delay: 0.8s;
-            transition-delay: 0.8s;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  #burguer .active > span:nth-child(2) {
-    width: 0;
-  }
-  #burguer .active > span:nth-child(1),
-  #burguer .active > span:nth-child(3) {
-    -webkit-transition-delay: .4s;
-            transition-delay: .4s;
-  }
-  #burguer .active > span:nth-child(1) {
-    -webkit-transform: translateY(9px);
-            transform: translateY(9px);
-  }
-  #burguer .active > span:nth-child(3) {
-    -webkit-transform: translateY(-9px) rotate(90deg);
-            transform: translateY(-9px) rotate(90deg);
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
   }
   .header-nav-links {
     position: absolute;
