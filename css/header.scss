@@ -78,70 +78,75 @@ header {
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (min-width: 375px) {
   .header-nav {
     padding: 20px 32px;
   }
 
-  .burger{
-    display: flex;
-    flex-direction: column;
-    width: 2rem;
-    height: 2rem;
+  // .burger{
+  //   display: flex;
+  //   flex-direction: column;
+  //   width: 2rem;
+  //   height: 2rem;
+  //   background: transparent;
+  //   border: 0;
+  //   gap: .5rem;
+
+  //   &:hover {
+  //     cursor: pointer;
+  //   }
+  // }
+
+  // #burger > div{
+  //   display: block;
+  //   background-color: $color-dark;
+  //   height: 3px;
+  //   width: 100%;
+  //   border-radius: 2px;
+  //   transition: all .5s;
+  // }
+  #burguer{
     background: transparent;
-    border: 0;
-    gap: .5rem;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  #burger > div{
-    display: block;
-    background-color: $color-dark;
-    height: 3px;
-    width: 100%;
-    border-radius: 2px;
-    transition: all .5s;
+    border: none;
   }
   
-  // #burger > span {
-  //   display: block;
-  //   width: 28px;
-  //   height: 3px;
-  //   border-radius: 100px;
-  //   background-color: $color-dark;
-  //   cursor: pointer;
-  // }
+  #burger > span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 100px;
+    background-color: $color-dark;
+    cursor: pointer;
+  }
 
-  // #burger:hover{
-  //   cursor: pointer;
-  // }
+  #burger:hover{
+    cursor: pointer;
+  }
 
-  // #burger > span:not(:last-child) {
-  //   margin-bottom: 5px;
-  // }
-  // #burger, #burger > span {
-  //   transition: all .4s ease-in-out;
-  // }
-  // #burguer .active{
-  //   transition-delay: 0.8s;
-  //   transform: rotate(45deg);
-  // }
-  // #burguer .active > span:nth-child(2){
-  //   width: 0;
-  // }
-  // #burguer .active > span:nth-child(1),
-  // #burguer .active > span:nth-child(3){
-  //   transition-delay: .4s;
-  // }
-  // #burguer .active > span:nth-child(1){
-  //   transform: translateY(9px);
-  // }
-  // #burguer .active > span:nth-child(3){
-  //   transform: translateY(-9px) rotate(90deg);
-  // }
+  #burger > span:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  #burger, #burger > span {
+    transition: all .4s ease-in-out;
+    border: none;
+  }
+  #burguer .active{
+    transition-delay: 0.8s;
+    transform: rotate(45deg);
+  }
+  #burguer .active > span:nth-child(2){
+    width: 0;
+  }
+  #burguer .active > span:nth-child(1),
+  #burguer .active > span:nth-child(3){
+    transition-delay: .4s;
+  }
+  #burguer .active > span:nth-child(1){
+    transform: translateY(9px);
+  }
+  #burguer .active > span:nth-child(3){
+    transform: translateY(-9px) rotate(90deg);
+  }
 
   .header-nav-links {
     position: absolute;
@@ -182,7 +187,10 @@ header {
   .header-nav {
     padding: 20px 32px;
   }
-  
+  #burguer{
+    background: transparent;
+    border: none;
+  }
   #burger > span {
     display: block;
     width: 28px;
@@ -196,6 +204,7 @@ header {
   }
   #burger, #burger > span {
     transition: all .4s ease-in-out;
+    border: none;
   }
   #burguer.active{
     transition-delay: 0.8s;
@@ -255,6 +264,34 @@ header {
   .header-nav {
     padding: 20px 100px;
   }
+
+  // .burger{
+  //   display: flex;
+  //   flex-direction: column;
+  //   width: 2rem;
+  //   height: 2rem;
+  //   background: transparent;
+  //   border: 0;
+  //   gap: .5rem;
+
+  //   &:hover {
+  //     cursor: pointer;
+  //   }
+  // }
+
+  // #burger > div{
+  //   display: block;
+  //   background-color: $color-dark;
+  //   height: 3px;
+  //   width: 100%;
+  //   border-radius: 2px;
+  //   transition: all .5s;
+  // }
+
+  #burguer{
+    background: transparent;
+    border: none;
+  }
   .burger {
     display: none;
   }
@@ -297,6 +334,10 @@ header {
     padding: 20px 100px;
   }
 
+  #burguer{
+    background: transparent;
+    border: none;
+  }
   .burger {
     display: none;
   }
